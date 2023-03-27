@@ -2,7 +2,8 @@
 *.zip
 my-notes.txt
 p1_covnert/
-
+bin/
+lib/
 
 # Compiled class file
 *.class

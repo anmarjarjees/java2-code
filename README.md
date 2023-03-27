@@ -2,10 +2,14 @@
 
 Java 2 Lectures (In-Class) Code
 
-For more details information and comments, refer to the main repo resource ["JAVA OOP and UML"](https://github.com/anmarjarjees/java-oop-uml)
+This repo is build based on the following repos. For more details information and comments, refer to these resource:
+- [JAVA Essentials](https://github.com/anmarjarjees/java-essentials)
+- ["JAVA OOP and UML"](https://github.com/anmarjarjees/java-oop-uml)
+- [JAVA Extra](https://github.com/anmarjarjees/java-extra)
 
-
-# Visual Studio Default READ<E.md Contents Below:
+---
+---
+# Visual Studio Default READE.md Contents Below:
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
