@@ -9,6 +9,10 @@ public class Perimeter {
         return value * 4;
     }
 
+    public double getPerimeter(int value) {
+        return value * 4;
+    }
+
     // for the rectangle shapes:
     public double getPerimeter(double value1, double value2) {
         return 2 * (value1 + value2);
