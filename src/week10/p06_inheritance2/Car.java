@@ -51,10 +51,10 @@ public class Car extends Vehicle {
         System.out.println("Car Status: " + isPreOwned);
     }
 
-    // Creating another method with the same name "getCarRecord"
+    // Creating another method with the name "getCarRecord"
     // from the original class:
-    public void getRecord() {
-        // String fixPart, double cost
+    public void getCarRecord() {
+        // Passing String "fixPart", double "cost"
         super.getRecord("Breaks", 869.73);
         System.out.println("Purchase Year: " + purchaseYear);
     }

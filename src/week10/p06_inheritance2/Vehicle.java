@@ -28,17 +28,18 @@ public class Vehicle {
      * (with no parameters) that implicitly being generated
      * when we create a new object.
      * 
-     * Adding (overloading) another/other constructor(s)
-     * will remove the default one
+     * Adding another/other custom constructor(s)
+     * will override the default one
      * 
-     * so if you extends this class, the subclass CANNOT be without a
+     * so if you "extends" this class, the subclass CANNOT be without a
      * constructor,
      * it must implement the same constructor from the parent class,
      * OR you can redefine the default one explicitly in the superclass
      * to make it available again,
      * in such case no need to write the constructor in the subclass
      */
-    // Default Constructor:
+
+    // Adding a default constructor explicitly:
     // public Vehicle() {
     // }
 
