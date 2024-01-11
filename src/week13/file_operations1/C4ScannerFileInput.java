@@ -1,4 +1,4 @@
-package week13.file_operations;
+package week13.file_operations1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class C4ScannerFileInput {
     public static void main(String[] args) {
+        int y = 20;
         try {
             Scanner intFile = new Scanner(new File("src\\week13\\test-int.txt"));
 
@@ -41,11 +42,18 @@ public class C4ScannerFileInput {
             // close the file(s):
             intFile.close();
             strFile.close();
+
+            // For testing:
+            int x = 10;
         } catch (FileNotFoundException e) {
             // printing simple message:
             System.out.println("Your file cannot be found or located!");
             // or calling the .getMessage() method of the e object:
             System.out.println(e.getMessage());
+
+            // System.out.println("X varaible" + x);
+            // x cannot be resolved to a variable => local scope inside the try block
+            System.out.println("Y varaible" + y);
         }
     } // end main()
 } // end file class

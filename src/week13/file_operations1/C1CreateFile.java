@@ -1,4 +1,4 @@
-package week13.file_operations;
+package week13.file_operations1;
 
 // Importing the class "File" from "java.io" package:
 // File class: to access files or complete directories (Read/Write Operations)
@@ -53,7 +53,8 @@ public class C1CreateFile {
         try {
             /*
              * createNewFile() returns:
-             * > true if the named file does not exist and was successfully created;
+             * > true if the named file does not exist and was successfully created
+             * 
              * > false if the named file already exists
              */
             myFile1.createNewFile();
