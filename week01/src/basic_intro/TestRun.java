@@ -1,28 +1,25 @@
-package week01;
+package basic_intro;
 
-public class Test {
+public class TestRun {
     public static void main(String[] args) {
         int studentGrade = 90;
+        /*
+         * Using Ternary Operator :-)
+         */
         System.out.println(studentGrade >= 60 ? "Passed" : "Failed");
 
         int product = 3;
         while (product <= 100)
             product = 3 * product;
 
-        int product = 3;
-        while (product <= 100) {
-            product = 3 * product;
-        }
-
-        /*
+         /*
          * In VScode, just type:
-         * > sysout then TAB
+         * > sout then TAB
          * Print to standard out
          * System.out.println();
          * 
          * in Eclipse, type:
-         * > sysout and press Ctrl + space.
+         * > sout and press Ctrl + space.
          */
-
     } // end main()
 }

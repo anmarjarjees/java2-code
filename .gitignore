@@ -1,5 +1,6 @@
 # My List:
 *.zip
+.vscode/
 my-notes.txt
 p1_covnert/
 bin/

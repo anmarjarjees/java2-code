@@ -1,4 +1,7 @@
 package p1_convert;
+/*
+Link: https://diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator
+ */
 
 /* 
  * For utilities and functions
