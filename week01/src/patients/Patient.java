@@ -22,9 +22,19 @@ public class Patient {
      * float
      * > Reference Data Types (Start with Capital): String Class Names
      * 
+     * Link:
+     * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+     * 
      * Access Modifiers (Visibility Modifiers): private, public, protected, default
+     * Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
      */
 
+    /*
+     * Class fields can have default values set by the compiler
+     * In general 0 or null
+     * Link:
+     * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+     */
     // using camelCase by convention
     // we should avoid using "public" if possible for properties
     public String firstName; // "" by default => empty string
@@ -34,12 +44,12 @@ public class Patient {
     private double weight; // 0.0 by default for double
     private double height; // 0.0 by default
     private int age; // 0 by default for integers
+    private boolean isObese; // false by default
     /*
      * NOTE:
      * Java Compiler gives us a warning for not using the private fields
      * As you have learned, warnings will not stop our application from being run
      */
-
 
     // 2. Class Methods: "function" inside a class
     /*
@@ -72,7 +82,18 @@ public class Patient {
         return (age >= 60 ? true : false);
     }
 
-    // Task: Create another "public" method to just print the patient's information
+    // Just for testing the default values of the class field:
+    // Link:
+    // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+    public void testDefaultValues() {
+        System.out.println(firstName); // null
+        System.out.println(weight); // 0.0
+        System.out.println(age); // 0
+        System.out.println(isObese); // false
+    }
+
+    // TaskS for the next project :
+    // Create another "public" method to just print the patient's information
 
     // Create another public method to to calculate Body Mass Index
 

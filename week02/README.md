@@ -1,20 +1,8 @@
-# JAVA 2 Code Examples
+# Packages and Code Files Sequence:
+- bmi_calculation:
+    - Patient.java
+    - PatientTest.java
 
-Java 2 Lectures (In-Class) Code
-
-This repo is build based on the following repos. For more details information and comments, refer to these resource:
-- [JAVA Essentials](https://github.com/anmarjarjees/java-essentials)
-- [JAVA OOP and UML](https://github.com/anmarjarjees/java-oop-uml)
-- [JAVA Extra](https://github.com/anmarjarjees/java-extra)
-
-## NOTES:
-- Every week folder in this repo is a separate Java project
-- Each project contains the "src" folder as I gitignored the others
-- Each project has a README.MD that contains the code file sequence
-
----
----
-# Visual Studio Default READE.md Contents Below:
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

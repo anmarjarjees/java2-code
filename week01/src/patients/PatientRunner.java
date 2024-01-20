@@ -28,6 +28,9 @@ public class PatientRunner {
          * objectName.method()
          */
 
+        // calling this method below to check the default values for the variables:
+        patient1.testDefaultValues();
+
         // Updating the values of the public instance variable
         patient1.firstName = "Alex";
         patient1.lastName = "Chow";
@@ -41,7 +44,7 @@ public class PatientRunner {
         patient1.isAdult(18); // has no output
 
         System.out.println(patient1.isAdult(18)); // true/false
-        
+
         // Since this method returns a boolean value:
         // we can use it in the if condition:
         if (patient1.isAdult(18)) {
@@ -50,9 +53,22 @@ public class PatientRunner {
             System.out.println("This patient is underage");
         }
 
-        // creating two more instances (objects):
+        // Creating two more instances (objects):
         Patient patient2 = new Patient();
 
         Patient patient3 = new Patient();
+
+        /*
+         * A note from "Oracle" about "Local variables":
+         * The compiler never assigns a default value to an uninitialized local
+         * variable.
+         * If you cannot initialize your local variable where it is declared,
+         * make sure to assign it a value before you attempt to use it.
+         * Accessing an uninitialized local variable will result in a compile-time
+         * error.
+         */
+        int myLocalVariable;
+        // System.out.println(myLocalVariable);
+        // The local variable myLocalVariable may not have been initialized
     } // main()
 } // class file
