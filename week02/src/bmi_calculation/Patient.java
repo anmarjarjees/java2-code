@@ -13,6 +13,8 @@ Link: https://diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index
  * - Inheritance
  * - Encapsulation 
  */
+
+// This is a utility class:
 public class Patient {
     // 1. Class Properties/Attributes/fields: Variables inside a class
     /*
@@ -34,6 +36,11 @@ public class Patient {
     private double height; // 0.0d by default
 
     // private int age; // no need for this variable
+
+    /*
+     * Notice that this class doesn't have any custom constructor,
+     * Java will invoke the default one that has no parameter
+     */
 
     // 2. Getters and Setters Methods:
     /*

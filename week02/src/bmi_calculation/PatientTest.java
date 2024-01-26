@@ -8,12 +8,13 @@ public class PatientTest {
          * Sam Simpson
          * Sally Grayson
          * 
-         * creating 3 objects (instances)
+         * Creating 3 objects (instances)
          * 
-         * Using the default Constructor
+         * Using the "default" Constructor
          * to construct these new objects
          * 
-         * the default constructor CANNOT accept any arguments
+         * the default constructor CANNOT accept any arguments:
+         * new Patient()
          */
         Patient p1 = new Patient();
         Patient p2 = new Patient();
@@ -24,8 +25,9 @@ public class PatientTest {
          * we can assign values to these objects:
          */
 
-        // first names
+        // first name:
         p1.setFirstName("Alex");
+        // last name:
         p1.setLastName("Chow");
 
         p2.setFirstName("Sam");

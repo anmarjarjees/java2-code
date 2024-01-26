@@ -2,7 +2,8 @@
 *.zip
 .vscode/
 my-notes.txt
-p1_covnert/
+p1_convert/
+p1_convert_demo/
 bin/
 lib/
 
