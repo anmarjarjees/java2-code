@@ -1,14 +1,23 @@
-package week04.p03_demo;
+package classes_demo;
 
-import week04.p01_classes.User;
+/*
+ * We need to import them to be used
+ */
+import bank_accounts.Account;
 
 /* 
- * Importing all the class files inside the package "week04.p01_classes"
+ * Importing all the class files 
+ * inside the package "static_keyword"
  */
-import week04.p01_classes.*;
+import static_keyword.*;
 
 public class MainDemo {
     public static void main(String[] args) {
+        /*
+         * Create an object from a class named "Account"
+         */
+        Account account1 = new Account();
+
         /*
          * Create an object from a class named "User"
          */

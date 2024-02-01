@@ -1,12 +1,13 @@
 # Packages and Code Files Sequence:
-- basic_intro:
-    - Coding.java
-    - TestRun.java
-    - Person.java
-- patients:
-    - Patient.java
-    - PatientRunner.java
-
+- bank_accounts
+    - Account.java
+    - Main.java
+- static_keyword
+    - User.java
+    - Final.java
+    - Client.java (Just extra example self-study)
+- classes_demo
+    - MainDemo.java
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

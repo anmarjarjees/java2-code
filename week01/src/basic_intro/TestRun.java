@@ -8,7 +8,7 @@ public class TestRun {
          */
 
         // To recap:
-        if (studentGrade>=50) {
+        if (studentGrade >= 50) {
             System.out.println("Pass the course");
         } else {
             System.out.println("Try again");

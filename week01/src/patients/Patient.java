@@ -1,12 +1,6 @@
 package patients; // we have a sub-folder named "patients"
 
 /*
- * Java => Safe-type (strongly typed) language
- * camelCase => firstName
- * PascalCase => PatientInformation
- * snake_case => first_name (In Java, we use snake_case for package names)
- * kabob-case => first-name (JS Frameworks)
- * 
  * Class can have two members:
  * - Properties (Attributes) => variables inside a class
  * - Methods => functions inside a class
@@ -40,6 +34,17 @@ public class Patient {
     public String firstName; // "" by default => empty string
     public String lastName; // "" by default
 
+    /*
+     * Encapsulation:
+     * To keep all/some members hidden from outside the class.
+     * Which means this member cannot be accessed outside the class itself
+     * we can do it using the keyword "private"
+     * 
+     * NOTE:
+     * Any class member (fields and method)
+     * are defaulted to be "public"
+     * if we don't specify the access modifier
+     */
     // Encapsulation: using the access modifier "private"
     private double weight; // 0.0 by default for double
     private double height; // 0.0 by default

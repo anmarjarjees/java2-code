@@ -5,6 +5,11 @@ package bmi_calculation;
  * it's doesn't have the main() method
  */
 public class Patient {
+    /*
+     * Variables (fields) inside class are classified into two catagories:
+     * - Instance Variables => can be accessed by the class objects (instances)
+     * - Class Variables [static] => can only be accessed by the Class name
+     */
     // 1. Class Properties/Attributes/fields:
     private String firstName; // "" by default => empty string
     private String lastName; // "" by default
@@ -19,9 +24,13 @@ public class Patient {
      * - To construct an object of the class (public)
      * - Has the same name as the class name
      * - Cannot have a return type
+     * - Can be used for initializing the class fields (variables)
      */
+
+    // Constructor Parameters: String firstName & String lastName
     public Patient(String firstName, String lastName) {
-        // Initializing the class fields:
+        // Initializing the class fields
+        // the "this" refer to the instance fields
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -33,7 +42,11 @@ public class Patient {
         this.height = height;
     }
 
-    // We need to explicitly add/declare the constructor that has no parameters:
+    /*
+     * OOP: A default constructor that has no parameters
+     */
+
+    // We need to "explicitly" add/declare the constructor that has no parameters:
     public Patient() {
         // nothing to initialize
     }
@@ -48,11 +61,11 @@ public class Patient {
      * - Each one has different set of parameters or different data types
      * This is called "Overloading"
      * 
-     * In OOP, we have "Polymorphism" (Multi forms)
+     * In OOP => A PIE => "P" for "Polymorphism" (Multi forms)
      * 
      * Polymorphism can be implemented in two different types:
-     * - Overloading => in this class example
-     * - Overriding => for later (Inheritance)
+     * - Overloading (Compile Time)=> inside one class (in this class example)
+     * - Overriding (Run Time)=> with inheritance (for later)
      */
 
     // Getters and Setters:

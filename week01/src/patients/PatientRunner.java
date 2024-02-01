@@ -17,8 +17,12 @@ public class PatientRunner {
          */
 
         /*
-         * we are instantiating a Patient object named "patient1"
-         * using the default "constructor" => new ClassName()
+         * We are instantiating a Patient object named "patient1"
+         * using the default "Constructor" => new ClassName()
+         * 
+         * Constructor:
+         * A special method that are being called and triggered automatically
+         * when creating a new instance of a class
          */
         Patient patient1 = new Patient();
 

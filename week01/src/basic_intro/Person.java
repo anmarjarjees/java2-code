@@ -1,10 +1,28 @@
-package week04.p01_classes;
+/*
+ * A package is a sub-folder inside the main project folder: 
+ */
+package basic_intro;
+/*
+Oracle Documents:
+A class may be declared with the modifier public, in which case that class is visible to all classes everywhere.
+If a class has no modifier (the default, also known as package-private), it is visible only within its own package
 
-/* 
- * camelCase 
- * PascalCase
- * snake_case
+Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+
+Java Modifiers:
+Link: https://www.w3schools.com/java/java_modifiers.asp
+*/
+
+/*
+ * Working with a class named "Car"
+ * An "object" is any "entity" that has:
+ * - state 
+ * - behavior
  * 
+ * Example:
+ * Car is an object. It has
+ * States: sedan, 4-weal, white, etc...
+ * Behaviors: driving, braking, turn left, turn right, ... 
  */
 public class Person {
     // State of an object => in OOP are called fields which are just variable
@@ -15,6 +33,8 @@ public class Person {
     // behaviour of an object => in OOP are called methods which are just functions
     // declared within the class:
     /*
+     * Constructors: will be Discusses and explained in details
+     * --------------------------------------------------------
      * Constructor Method:
      * - is used to create instances of the class
      * - The constructor is named after the class
