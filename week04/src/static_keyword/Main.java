@@ -16,9 +16,10 @@ package static_keyword;
  * In Java environment, the less dependency we have between two classes is better for maintain, 
  * updating and debugging, so "loose coupling" which is "GOOD" is better than "tight coupling" which is "BAD".
  */
-public class Final {
+public class Main {
+    // main() the entry point to run our Java application
+    // It will be immediately invoked without an object
     public static void main(String[] args) {
-
         /*
          * we can directly call/access the "static" method "hiAll()"
          * through the class name "User" without creating an object
@@ -29,7 +30,7 @@ public class Final {
          * We instantiating 3 instances (objects)
          * using an empty constructor
          */
-        User user1 = new User("Martin", 5);
+        User user1 = new User("Martin", 55);
         User user2 = new User();
         User user3 = new User();
 
@@ -43,10 +44,19 @@ public class Final {
         user3.greetAll();
 
         /*
-         * The static method hiAll() from the type User should be accessed in a static
-         * way
+         * Error:
+         * "The static method hiAll() from the type User
+         * should be accessed in a static way"
+         * 
+         * Question: How "Should be accessed in a static way"???
          */
-        // user1.hiAll();
+
+        // user1.hiAll(); // Error
+        User.hiAll(); // hiAll() is a static method
+
+        // Example of using pow() static method of Math object:
+        double num = 2;
+        num = Math.pow(num, 10);
 
         System.out.println(User.getUserTotal());
 
@@ -71,5 +81,29 @@ public class Final {
 
         Client client5 = new Client("Kate Wilson", "Silver Account Type");
 
+        // Finally:
+        // calling our custom method "getFactorial()":
+        System.out.println("The factorial of 5 is :" + getFactorial(5));
+        System.out.println("The factorial of 3 is :" + getFactorial(3));
+        System.out.println("The factorial of 0 is :" + getFactorial(0));
     } // main()
-} // class
+
+    // Below we can create own custom method(s):
+    // find/return the factorial:
+    // 5! = 5 * 4 * 3 * 2 * 1
+    // 3! = 3 * 2 * 1
+    // 0! = 1
+    private static int getFactorial(int number) {
+        /*
+         * number = 5
+         * 5 * 4 * 3 * 2 * 1 = same
+         * 1 * 2 * 3 * 4 * 5 = same
+         */
+        int fact = 1;
+        for (int i = number; i > 0; i--) {
+            fact *= i;
+        }
+        return fact;
+    } // getFactorial()
+
+} // class file

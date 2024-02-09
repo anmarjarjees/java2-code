@@ -121,8 +121,8 @@ public class Patient {
 
     // Create another public method to just print the patient's information:
     public void printPatientInfo() {
-        System.out.println("First Name:" + firstName);
-        System.out.println("last Name:" + lastName);
+        System.out.println("First Name: " + firstName);
+        System.out.println("last Name: " + lastName);
     }
 
     /*

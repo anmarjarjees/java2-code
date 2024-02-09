@@ -100,4 +100,15 @@ public class Patient {
     public void setHeight(double height) {
         this.height = height;
     }
-}
+
+    // Create another public method to just print the patient's information:
+    public void printPatientInfo() {
+        System.out.println("First Name: " + firstName);
+        System.out.println("last Name: " + lastName);
+    }
+
+    // Static Method => belongs to the class not its object:
+    public static void printMsg() {
+        System.out.println("Have a good day and stay safe!");
+    }
+} // class file

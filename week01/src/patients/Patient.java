@@ -84,7 +84,10 @@ public class Patient {
      */
     public boolean isOldEnough(int age) {
         // instead of if/else block => just using ternary operator :-)
-        return (age >= 60 ? true : false);
+        return (age >= 60 ? true : false); // return => return a value and terminate the method
+        // Just for testing:
+        // Error: Unreachable code
+        // System.out.println("I am in wrong place :-( after the return!!!");
     }
 
     // Just for testing the default values of the class field:

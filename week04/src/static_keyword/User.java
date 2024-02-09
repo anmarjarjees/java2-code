@@ -22,21 +22,22 @@ public class User {
     public int age; // 0 by default
 
     // Practicing the keyword "static"
-    // this will make appName belongs to the "User" class itself
-    // and also make userId belongs to the "User" class itself
-    private static String appName; // application name
-    private static int userId; // User ID
+    // this will make "appName" belongs to the "User" class itself
+    // and also make "userId" belongs to the "User" class itself
+    public static String appName; // application name
+    public static int userId; // User ID
 
     /*
-     * It's a private field => we cannot use User.totalUser to access it outside?
-     * it has the keyword "static"!!!
+     * Although this field "totalUsers" is declared as "static"
+     * but we cannot use User.totalUser to access it outside the class
+     * Because it's a private field
      * 
-     * Usually we use "public" with any class member,
+     * Usually we use "public" with any "static" class member,
      * so we can access this class member publicly
      * by using ClassName.property or ClassName.method()
      * 
-     * In such case, we have to add the keyword "static"
-     * because we are calling this class field "variable"
+     * But in this class, we had to add the keyword "static"
+     * because we are calling this class field/variable "totalUsers"
      * inside a static method "getUserTotal()"
      */
     private static int totalUsers; // Total number of users
@@ -68,10 +69,27 @@ public class User {
         System.out.println("Hello every one! My name again is " + name + " and I'm " + age + " years old");
     }
 
-    // Access Modifier - "static" - Return Data Type - Method Name
-    // "static" - Access Modifier - Return Data Type - Method Name
+    // Method Syntax => Access Modifier - "static" - Return Data Type - Method Name
+    // Or: =>"static" - Access Modifier - Return Data Type - Method Name
     public static void hiAll() {
         System.out.println("Hello every one! Do you like Java?");
+        /*
+         * IMPORTANT NOTES:
+         * ----------------
+         * This method "hiAll()" is a "static" method
+         * so any field/method we need to use inside it has to be static also
+         * 
+         * When accessing these class fields: name and age here,
+         * we will see the following errors because neither one of them is static!
+         * 
+         * Errors:
+         * - Cannot make a static reference to the non-static field name
+         * - Cannot make a static reference to the non-static field age
+         * 
+         * Finally, we CANNOT use the keyword "this" inside a static method
+         */
+        // System.out.println("Hello every one! My name again is " + name + " and I'm "
+        // + age + " years old");
     }
 
     /*

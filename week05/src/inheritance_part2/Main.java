@@ -1,17 +1,16 @@
-package week10.p06_inheritance2;
+package inheritance_part2;
 
 public class Main {
     public static void main(String[] args) {
-        Car myCar = new Car("Toyota", "Sedan", "2 wheels drive", 2010, "Gas", 2014);
+        Car myCar = new Car("Toyota", "Sedan", "2 wheels drive", 2010);
 
-        System.out.println(myCar.getClass()); // class week10.p06_inheritance2.Car
+        Car myFriendCar = new Car("Toyota", "Sedan", "2 wheels drive", 2010, "Gas", 2014);
 
+        myCar.StartDriving();
+        myCar.turn("left");
         myCar.getCarSpecs();
 
-        // The field Vehicle.isPreOwned is not visible:
-        Vehicle myCar2 = new Vehicle("Toyota", "Sedan", "2 wheels drive", 2014);
-
-        myCar2.isPreOwned = true;
+        myFriendCar.StartDriving();
 
         Car myCar3 = new Car("Nissan", "Sedan", "2 wheels drive", 2008, "Gas", 2012);
 
@@ -23,6 +22,6 @@ public class Main {
             System.out.println("It's a new car");
         }
 
+        myCar.printRecord("Tires", 250.89);
     }
-
 }

@@ -48,5 +48,5 @@ public class PatientTest {
          */
         // p1.printMsg();
         Patient.printMsg();
-    }
-}
+    } // main()
+} // class file
