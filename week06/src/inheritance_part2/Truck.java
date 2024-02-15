@@ -3,7 +3,7 @@ package inheritance_part2;
  * Important Note to review again:
  * *********************************
  * 
- * When you first make the "Truck" extends "Vehicle",
+ * When you first make the class "Truck" extends "Vehicle",
  * Java compiler will show this complex error message:
  * "Implicit super constructor Vehicle() 
  * is undefined for default constructor. 
@@ -22,11 +22,8 @@ package inheritance_part2;
  */
 
 // Task: it's up to you which solution you will choose :-)
-// Task: Fix the code below as we did with class Car
+// Task: Fix the code below as we did with class Car or just by adding a default constructor in super class
 public class Truck extends Vehicle {
-
-    // we can use solution#1 by creating a custom constructor of "Truck":
-
-    // the rest of your code...
-
+    // we don't have to call the constructor from the superclass with super
+    // because the superclass has the implementation of the default constructor
 }

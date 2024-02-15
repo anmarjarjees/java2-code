@@ -3,13 +3,7 @@
 - inheritance_part1
     - Main.java
     - Rand.java
-- inheritance_part2
-    - Shape.java and Square.java
-    - Vehicle.java
-    - Car.java
-    - Truck.java
-    - Main.java
-    - Employee.java
+- example_randomize
 
 ## Getting Started
 

@@ -31,6 +31,15 @@ public class Main {
         // Task: random integer number (0 -26):
         System.out.println(random.nextInt(26)); // 0 - 26
 
+        // we can use the casting operation
+        /*
+         * a = 97 and A = 65
+         * Link: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
+         * 
+         * casting the numeric value to char => (char)
+         */
+        System.out.println((char) 97); // a
+        System.out.println((char) 65); // A
         /*
          * there is no in Java a method
          * to generate random Alphabet Letter (A-Z) or (a-z)
@@ -43,6 +52,7 @@ public class Main {
         // System.out.println(random.nextLetter()); // no such method :-(
 
         System.out.println("\nUsing Our Rand Class :-)");
+        // creating an object "rand" of our custom class "Rand"
         // Since our "Rand" class extends "Random"
         Rand rand = new Rand();
         System.out.println(rand.nextSmallLetter());

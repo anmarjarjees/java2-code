@@ -3,7 +3,7 @@ package inheritance_part1;
 import java.util.Random;
 
 /*
- * We cannot use the class "Random" with letters only with numbers,
+ * We cannot use the Java class "Random" with letters, only with numbers,
  * so we can convert the letter to its Decimal Code (numeric value)
  * in the ASCII Table
  * 
@@ -57,4 +57,19 @@ public class Rand extends Random {
     public char nextCapitalLetter() {
         return 'J'; // J for "Java"
     }
+
+    /*
+     * We have build this class with two methods"
+     * = to generate a random small letter
+     * = to generate a random upper letter
+     * 
+     * Our class is named "Rand" for Random
+     * should give us the methods to generate random numbers!
+     * 
+     * instead of creating these methods (re-invent the wheel)
+     * we can just use the ones that available in Java class "Random"!
+     * 
+     * solution:
+     * we can just make our class extend the class "Random"
+     */
 } // class file

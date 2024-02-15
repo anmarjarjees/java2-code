@@ -1,14 +1,29 @@
 package inheritance_part2;
+/*
+ * Create a superclass named "Vehicle"
+ * then make two subclass the extend the class "Vehicle":
+ * - Car is a Vehicle
+ * - Truck is a Vehicle
+ * - Airplane (Bad => Doesn't make sense)
+ */
+
 /* 
- * Definitions: 
- * A class that is derived from another class is called a subclass 
- * (also a derived class, extended class, or child class). 
- * 
- * The class from which the subclass is derived is called a superclass 
- * (also a base class or a parent class). 
- 
- * Different kinds of objects often have a certain amount in common with each other.
- * link: https://www.w3schools.com/java/java_inheritance.asp
+* Java Definitions: 
+* A class that is derived from another class is called a "subclass" 
+* (also a derived class, extended class, or child class). 
+* 
+* The class from which the subclass is derived is called a "superclass" 
+* (also a base class or a parent class). 
+
+- Java: Superclass and Subclass 
+- PHP: Parent class and Child Class
+ - C#: Base Class and Derived Class
+
+in C++, class can inherit from multiple classes
+In Java, C# => only one
+
+* Different kinds of objects often have a certain amount in common with each other.
+* link: https://www.w3schools.com/java/java_inheritance.asp
 */
 
 /*
@@ -38,8 +53,10 @@ public class Vehicle {
      * - protected (to be used with the idea of inheritance)
      */
     /*
-     * Private Members (Fields/Methods) CANNOT be accessed by the subclasses
-     * Private Members cannot be transferred to the subclasses
+     * Private Members (Fields/Methods):
+     * - CANNOT be accessed by the subclasses or any other classes
+     * - CANNOT be transferred to the subclasses
+     * - CANNOT be accessed outside the class "Vehicle"
      */
     //
     private String brand; // Toyota, Nissan, ..
@@ -51,6 +68,7 @@ public class Vehicle {
      * Public Members (Fields/Methods):
      * - can be accessed by any class inside the project
      * - for sure can be transferred to the subclasses :-)
+     * - CAN be accessed by any other class
      */
     public String province = "Ontario";
 
@@ -66,20 +84,35 @@ public class Vehicle {
      */
     protected boolean isPreOwned = false;
 
-    // Adding a default constructor explicitly:
-    // public Vehicle() {
-    // }
-
-    // In PHP => public function __construct(...) { }
-    // the Vehicle class has one constructor
-
+    // our custom Constructor that has 4 parameters
     public Vehicle(String brand, String type, String wheels, int year) {
         this.brand = brand;
         this.type = type;
         this.wheels = wheels;
         this.year = year;
         // In PHP => $this->brand = $brand;
-    }
+    } // constructor:
+
+    // Adding a default "constructor" explicitly:
+    /*
+     * Question:
+     * If any class is shipped with the default constructor (no parameter),
+     * why we have/need to write it below?
+     * 
+     * Answer-part1:
+     * When we add the custom constructor will disable the default one
+     * Then we can ignore the default one in case if we don't want to use it in the
+     * subclasses
+     * 
+     * Answer-part2:
+     * we need again to declare the default one explicitly
+     * because we need to use in the subclass, for example "Truck"
+     */
+    // public Vehicle() {
+    // }
+
+    // In PHP => public function __construct(...) { }
+    // the Vehicle class has one constructor
 
     // the Vehicle class has four methods
     public void StartDriving() {
@@ -94,12 +127,12 @@ public class Vehicle {
         System.out.println("Turn " + direction);
     }
 
-    public void getVehicleInfo() {
+    public void printVehicleInfo() {
         // we can add the "this" keyword, but no need!
         System.out.println("Brand: " + this.brand);
         System.out.println("type: " + this.type);
         System.out.println("wheels: " + wheels);
-        System.out.println("year: " + year);
+        System.out.println("year: " + year); // the make year
     }
 
     // we will add this method to get a record/list about the major recent

@@ -1,3 +1,12 @@
+# Packages and Code Files Sequence:
+- inheritance_part2
+    - Shape.java and Square.java
+    - Vehicle.java => The superclass
+    - Car.java => subclass of Vehicle
+    - Truck.java => subclass of Vehicle **(remember it has an error)**
+    - Main.java => The main class that contains main() method
+    - Employee.java => "final" class: cannot be extended, just for creating objects
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
