@@ -84,7 +84,7 @@ public class Vehicle {
      */
     protected boolean isPreOwned = false;
 
-    // our custom Constructor that has 4 parameters
+    // Our custom Constructor that has 4 parameters
     public Vehicle(String brand, String type, String wheels, int year) {
         this.brand = brand;
         this.type = type;

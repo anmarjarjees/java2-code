@@ -1,9 +1,7 @@
-package week11.p07_polymorphism;
+package polymorphism_review;
 
 /* 
- * OOP => Polymorphism:
- * - Overriding
- * - Overloading 
+ * polymorphism => method overriding 
  */
 public class Rectangle extends Shape {
     // two values for length and height
@@ -28,11 +26,13 @@ public class Rectangle extends Shape {
     }
 
     // Overriding => override the method calcPerimeter()
+    @Override
     public double calcPerimeter() {
         return 2 * (this.value1 + this.value2);
     }
 
     // Override the toString() method:
+    @Override
     public String toString() {
         return "Rectangle";
     }

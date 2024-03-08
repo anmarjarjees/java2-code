@@ -1,4 +1,4 @@
-# Packages and Code Files Sequence:
+# Week06 Packages and Code Files Sequence:
 - inheritance_part2
     - Shape.java and Square.java
     - Vehicle.java => The superclass

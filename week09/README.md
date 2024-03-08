@@ -1,8 +1,21 @@
-# Week02 Packages and Code Files Sequence:
-- bmi_calculation:
-    - Patient.java
-    - PatientTest.java
-
+# Week09 Packages and Code Files Sequence:
+- inheritance_part3
+    - package1
+        - Vehicle.java
+        - Person.java
+        - Car.java
+        - Animal.java
+    - package2
+        - Truck.java
+    - Main.java
+- polymorphism_review:
+    - Perimeter.java
+    - Shape.java
+    - Triangle.java
+    - Square.java
+    - Rectangle.java
+    - Main.java
+    
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

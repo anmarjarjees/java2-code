@@ -1,12 +1,13 @@
-package week11.p07_polymorphism;
+package polymorphism_review;
 
 /*
- * Shape is the main superclass for the other subclasses:
+ * "Shape" class is the main superclass for the other subclasses:
  * - Square
  * - Triangle 
  * - Rectangle
  */
 public class Shape {
+    // stick with the default constructor (has no parameters)
 
     // public method
     public double calcPerimeter() {

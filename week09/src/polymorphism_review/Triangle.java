@@ -1,5 +1,8 @@
-package week11.p07_polymorphism;
+package polymorphism_review;
 
+/* 
+ * polymorphism => method overriding 
+ */
 public class Triangle {
     // three values for side1, side2, and base (no difference)
     private double value1;
@@ -15,4 +18,5 @@ public class Triangle {
     public double calcPerimeter() {
         return this.value1 + this.value2 + this.value3;
     }
+
 }

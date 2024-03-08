@@ -1,4 +1,4 @@
-package week11.p07_polymorphism;
+package polymorphism_review;
 
 public class Main {
     public static void main(String[] args) {
