@@ -1,9 +1,6 @@
-package week12.p09_interface;
+package about_interfaces;
 
 public class SeniorLevel implements PaymentCalculator {
-    public double getGrossPay() {
-        return 0;
-    }
 
     @Override
     public double calculateGross(double hours) {
@@ -12,7 +9,6 @@ public class SeniorLevel implements PaymentCalculator {
         double payRate = 35; // initialize the variable "payRate" with the value of $35
         // 3. Hours x Pay Rate:
         double payPerWeek = hours * payRate;
-
         return payPerWeek;
     }
 
@@ -21,4 +17,5 @@ public class SeniorLevel implements PaymentCalculator {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'doSomething'");
     }
+
 }

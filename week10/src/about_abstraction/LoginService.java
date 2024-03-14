@@ -1,4 +1,4 @@
-package week12.p08_abstraction;
+package about_abstraction;
 
 public class LoginService {
 

@@ -1,20 +1,19 @@
-package week12.p09_interface;
+package about_interfaces;
 
+/* 
+ * Ask ourselves:
+ * JuniorLevel is a PaymentCalculator?
+ * no connection between the two classes!
+ */
 public class JuniorLevel implements PaymentCalculator {
-    /*
-     * public double calGrossPay() {
-     * return 0;
-     * }
-     */
 
     @Override
     public double calculateGross(double hours) {
-        // Initialization means providing a default value for a variable at the time of
-        // declaration
+        // Initialization a variable:
+        // means providing a default value for a variable at the time of declaration
         double payRate = 25; // initialize the variable "payRate" with the value of $25
         // 3. Hours x Pay Rate:
         double payPerWeek = hours * payRate;
-
         return payPerWeek;
     }
 
