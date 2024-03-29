@@ -1,9 +1,17 @@
-# Week11 Packages and Code Files Sequence:
-- exceptions_part1
-    - C1ExceptionIdea.java
-    - C2ExceptionDemo.java
-    - C3ExceptionMore.java
-    
+# Week12 Packages and Code Files Sequence:
+- files_part1
+    - C1CreateFile.java
+    - C2FileScanWrite.java
+- exceptions_part2
+    - C1FileException.java => First Solution
+    - C2FileException.java => Second Solution
+    - C3StackTraceEx.java
+
+### NOTE: 
+This "week12" project folder contains a folder named "text-files" for saving the text files:
+- numbers.txt
+- result.txt
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
