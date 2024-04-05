@@ -6,6 +6,7 @@ p1_convert/
 p1_convert_demo/
 bin/
 lib/
+temp/
 
 # Compiled class file
 *.class

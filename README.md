@@ -6,6 +6,7 @@ This repo is build based on the following repos. For more details information an
 - [JAVA Essentials](https://github.com/anmarjarjees/java-essentials)
 - [JAVA OOP and UML](https://github.com/anmarjarjees/java-oop-uml)
 - [JAVA Extra](https://github.com/anmarjarjees/java-extra)
+- [Java How To Program By by Paul Deitel and Harvey Deitel](https://github.com/anmarjarjees/JavaHowToProgram11e_EarlyObjects)
 
 ## NOTES:
 - Every week folder in this repo is a separate Java project
