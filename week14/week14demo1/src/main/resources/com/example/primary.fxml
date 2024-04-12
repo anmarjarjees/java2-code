@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    IMPORTANT NOTE: 
+    ***************
+    All comments must be added afte the declaration line at the top,
+    Otherwise there will be an error.
+
+    First line is the xml doc type: version and encoding 
+    Notice that these are the default values for Java
+    If you remove this line Java will assume the same:
+    - version="1.0" 
+    - encoding="UTF-8"
+-->
+
+
+<!--
+This file contains the layout information
+
+As in Java, class names can be fully-qualified (including the package name),
+or they can be imported using the "import" processing instruction (PI)
+
+We need to import the required library that we are going to use:
+-->
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<!--
+By default, IJ IDE or VS Code use VBox for vertical layout box
+child nodes will be arranged in a vertical column
+All the code must be included inside the VBox element
+
+<fx:include>
+<fx:constant>
+<fx:reference>
+<fx:copy>
+<fx:root>
+
+As with HTML, XML elements have attributes also: alignment, spacing
+Every .fxml file can have only one controller: "com.example.demo1.HelloController"
+ -->
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   
+   <!-- Notice we removed the <childlren> element -->
+   
+   <!-- <children>
+      <Label text="Primary View" />
+      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+   </children>  -->
+  
+
+    <!-- The box has some padding inside of it -->
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+
+   <!-- Let's start adding our custom interface controllers :-) -->
+</VBox>

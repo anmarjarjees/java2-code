@@ -1,0 +1,14 @@
+# My Complete Custom GitIgnore File For Week14:
+# *********************************************
+
+# Dear Students,
+# I have attached this gitignore file to ignore the unessary folder/files and just mainly focus on uploading the important folders:
+
+target/
+.idea/
+.mvn/
+mvnw
+mvnw.cmd
+pom.xml
+
+# Notice that these project became not workable after removing all these folder as the focus here in the source coding files
