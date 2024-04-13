@@ -6,7 +6,8 @@ Notice the Week14 is just a folder that contains Java project, so it's not a Jav
 # Projects List
 - demo: The boilerplate JavaFX project using Visual Studio Code
 - week14demo1: The boilerplate JavaFX project using Visual Studio Code, but the entire code for each file: (the application, the controller, and the view) have been modified to be similar to the basic boilerplate contents of IntelliJ and also removing, commenting and clearing the extra code.
-- **FinalClass:** is the main example of building a full JavaFX MVC application using IntelliJ IDE. It's the main important file to read and review for your third assignment.  
+- **FinalClass:** The main example of building a full JavaFX MVC application using IntelliJ IDE. It's the main important file to read and review for your third assignment.  
+- **FinalReview:**  The final review example of building a full JavaFX MVC application using IntelliJ IDE. It's another extra help for starting your essential JavaFX assignment.
 
 # JavaFX Project:
 Whether you are using VS Code or IntelliJ (Strongly recommended due to the code checking and enhanced debugging tools). You will have these files:
