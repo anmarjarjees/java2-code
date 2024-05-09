@@ -8,7 +8,7 @@ package patients; // we have a sub-folder named "patients"
  * OOP => Object-Oriented Programming =>  A PIE
  */
 public class Patient {
-    // 1. Class Properties/Attributes/fields: variables inside a class
+    // 1. Class Properties/Attributes/Class fields: variables inside a class
 
     /*
      * Two data types in Java:
@@ -18,9 +18,6 @@ public class Patient {
      * 
      * Link:
      * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
-     * 
-     * Access Modifiers (Visibility Modifiers): private, public, protected, default
-     * Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
      */
 
     /*
@@ -29,23 +26,39 @@ public class Patient {
      * Link:
      * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
      */
+
+    /*
+     * Access Modifiers (Visibility Modifiers):
+     * - private
+     * - public
+     * - protected
+     * - default (empty )=> nothing is specified!
+     * 
+     * Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+     */
     // using camelCase by convention
     // we should avoid using "public" if possible for properties
     public String firstName; // "" by default => empty string
     public String lastName; // "" by default
 
     /*
+     * OOP => 4 pillars => A PIE
+     * 
      * Encapsulation:
      * To keep all/some members hidden from outside the class.
      * Which means this member cannot be accessed outside the class itself
      * we can do it using the keyword "private"
+     * 
+     * "Encapsulation": example using "private"
      * 
      * NOTE:
      * Any class member (fields and method)
      * are defaulted to be "public"
      * if we don't specify the access modifier
      */
+
     // Encapsulation: using the access modifier "private"
+    // NOTE: Class fields have default values:
     private double weight; // 0.0 by default for double
     private double height; // 0.0 by default
     private int age; // 0 by default for integers
@@ -100,7 +113,7 @@ public class Patient {
         System.out.println(isObese); // false
     }
 
-    // TaskS for the next project :
+    // Tasks for the next project:
     // Create another "public" method to just print the patient's information
 
     // Create another public method to to calculate Body Mass Index

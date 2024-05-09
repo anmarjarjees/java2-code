@@ -27,8 +27,21 @@ Link: https://www.w3schools.com/java/java_modifiers.asp
 public class Person {
     // State of an object => in OOP are called fields which are just variable
     // declared within the class:
-    int age;
-    String name;
+    /*
+     * To recap:
+     * Primitive" Data Types => start with small letter
+     * "Reference" Data Types => start with Capital letter
+     */
+    int age; // Primitive Data Type
+    Integer birthYear; // Reference Data Type
+
+    double salary; // Primitive Data Type
+    Double totalIncome; // Reference Data Type
+
+    boolean isSingle; // Primitive Data Type
+    Boolean isMarried; // Reference Data Type
+
+    String name; // Reference Data Type (ONLY)
 
     // behaviour of an object => in OOP are called methods which are just functions
     // declared within the class:
@@ -53,6 +66,7 @@ public class Person {
     }
 
     /*
+     * NOTE:
      * We can add the main() method which is the entry point to run our application
      * within the class "Person" and it's ok for learning and demonstration
      * but with large application,
@@ -60,6 +74,7 @@ public class Person {
      * easier for debugging, to enforce the idea of encapsulation (later..)
      * and we can reuse the class with other application if we want
      */
+
     // Adding the main method:
     public static void main(String[] args) {
         // creates a new Person object
