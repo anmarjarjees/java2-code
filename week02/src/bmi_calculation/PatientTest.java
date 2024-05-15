@@ -2,6 +2,7 @@ package bmi_calculation;
 
 public class PatientTest {
     public static void main(String[] args) {
+        System.out.println("Patient Info Application:");
         /*
          * We have 3 patients
          * Alex Chow
@@ -22,7 +23,11 @@ public class PatientTest {
 
         /*
          * By the help of the setters public methods,
-         * we can assign values to these objects:
+         * we can assign values to these private properties:
+         * - the private field "firstName"
+         * - the private field "lastName"
+         * - the private field "weight"
+         * - the private field "height"
          */
 
         // first name:

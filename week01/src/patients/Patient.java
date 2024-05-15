@@ -11,18 +11,35 @@ public class Patient {
     // 1. Class Properties/Attributes/Class fields: variables inside a class
 
     /*
-     * Two data types in Java:
+     * To recap, two data types in Java:
      * > Primitive Data Types (Start with small letters): int, double, boolean,
      * float
      * > Reference Data Types (Start with Capital): String Class Names
+     * 
+     * "Primitive" Data Types:
+     * > Have default values
+     * > can NOT contain "null" values
+     * > are built into the Java language and are not objects
+     * 
+     * 
+     * "Reference" data types:
+     * > more complex data types that store references (memory addresses) to
+     * objects.
+     * > used with complex data structures
+     * 
+     * 
+     * The choice between which one to use depends on various factors, like:
+     * - memory usage
+     * - performance considerations
+     * - the nature/use of the data being manipulated
+     * - Collections library like ArrayList, HashMap, LinkedList
      * 
      * Link:
      * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
      */
 
     /*
-     * Class fields can have default values set by the compiler
-     * In general 0 or null
+     * Class fields as
      * Link:
      * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
      */
@@ -42,6 +59,11 @@ public class Patient {
     public String lastName; // "" by default
 
     /*
+     * NOTE: Class fields have default values:
+     * 
+     */
+
+    /*
      * OOP => 4 pillars => A PIE
      * 
      * Encapsulation:
@@ -58,7 +80,6 @@ public class Patient {
      */
 
     // Encapsulation: using the access modifier "private"
-    // NOTE: Class fields have default values:
     private double weight; // 0.0 by default for double
     private double height; // 0.0 by default
     private int age; // 0 by default for integers

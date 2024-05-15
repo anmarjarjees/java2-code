@@ -9,7 +9,9 @@ Link: https://diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index
  * A PIE => The four pillars of OOP
  * OOP is based on 4 core concepts (pillars): 
  * - Abstraction
- * - Polymorphism
+ * - Polymorphism: can be implemented in two ways:
+ *  - Overload (Covered in details in Semester1)
+ *  - Override (To covered in details in Semester2)
  * - Inheritance
  * - Encapsulation 
  */
@@ -38,8 +40,13 @@ public class Patient {
     // private int age; // no need for this variable
 
     /*
-     * Notice that this class doesn't have any custom constructor,
+     * Notice that this class does NOT have any custom constructor
+     * (which a constructor with parameters),
      * Java will invoke the default one that has no parameter
+     * 
+     * Yes, we can add a constructor for initializing the values
+     * of weight and height, but we will do in next lectures.
+     * Instead, we will use "Getters" and "Setters"
      */
 
     // 2. Getters and Setters Methods:
@@ -47,10 +54,10 @@ public class Patient {
      * Getters => get the value of a private class field (property)
      * Setters => set (assign) a value to a private class field (property)
      * 
-     * - Getters and Setters are simply just methods
-     * - By convention: start with get and set
+     * - Getters and Setters are simply just methods:
+     * - By convention: start with "get" and "set"
      * - are public to open the doors to access private field(s)
-     * - Optional
+     * - Optional (Not mandatory to add get/set for each/all fields)
      */
 
     // Getters:
@@ -92,21 +99,33 @@ public class Patient {
     }
 
     // 3. Class Methods are listed below (if you have any):
+    /*
+     * Task:
+     * To check if the patient is adult => return true
+     * if the patient is not adult => return false
+     * [Adult => age is at least 18]
+     */
     // Methods are functions inside a class
     public boolean isAdult(int age) {
         /*
          * To recap (in any programming language):
          * "return" keyword has two actions:
          * - return the value of any data type
-         * - terminate (stop) the method: any code after "return" will NOT BE executed
+         * - terminate (stop) the method:
+         * any code after "return" will NOT BE executed
          */
         if (age >= 18) {
             // do something
             return true;
+            /*
+             * Don't forget that "return" statement has two actions:
+             * - returns a value
+             * - terminates (stops) the method
+             */
             // it is like a "break" statement in for loop or switch() case block :-)
         }
         return false;
-        // No thing here, no more extra code...
+        // Nothing here, no code after "return" => (Unreachable Code)
     } // isAdult()
 
     // Create another public method just for the blood sugar
@@ -161,7 +180,7 @@ public class Patient {
      * 180 CM => 180/100 = 1.8 M
      */
 
-    // calculateBMI:
+    // "calculateBMI" method:
     public double calculateBMI() {
         // Height in CM: convert it to Meter
         // use the class property "height"
@@ -170,8 +189,11 @@ public class Patient {
         // BMI = kg/m x m
         // double bmi = weight / (meter * meter);
 
-        // Or using a "static" method named "pow()"
-        // that belongs to Java class named "Math"
+        /*
+         * Math.pow(x,y):
+         * Or using a "static" method named "pow()"
+         * that belongs to Java class named "Math"
+         */
         // the method pow() for the power:
         double bmi = weight / Math.pow(meter, 2);
         return bmi;
@@ -195,6 +217,7 @@ public class Patient {
      * value
      * - Simply we can pass the value of BMI as argument to the method in main code
      */
+    // "getBMIStatus" method:
     public String getBMIStatus(double bmi) {
         /*
          * The logic/algorithm:
