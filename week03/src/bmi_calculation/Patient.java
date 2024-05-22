@@ -27,6 +27,16 @@ public class Patient {
      * - Can be used for initializing the class fields (variables)
      */
 
+    /*
+     * > Using Multiple Constructors (methods)
+     * > Is an example of "Polymorphism" (Multiple Forms)
+     * > "Polymorphism" can be implemented with "Overloading" and "Overriding"
+     * - Overloading (Our current example) => Multiple Constructor Methods:
+     * > Different set of parameters
+     * > Different data types
+     * - Overriding (To be discussed later) => With "Inheritance"
+     */
+
     // Constructor Parameters: String firstName & String lastName
     public Patient(String firstName, String lastName) {
         // Initializing the class fields
@@ -35,6 +45,7 @@ public class Patient {
         this.lastName = lastName;
     }
 
+    // Constructor Parameters: String firstName & String lastName & weight & height
     public Patient(String firstName, String lastName, double weight, double height) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -46,13 +57,21 @@ public class Patient {
      * OOP: A default constructor that has no parameters
      */
 
-    // We need to "explicitly" add/declare the constructor that has no parameters:
+    /*
+     * NOTE TO RECAP:
+     ****************
+     * We need to "explicitly" add/declare the constructor that has no parameters.
+     * Notice that this is needed only after adding our custom constructor(s) with
+     * parameters.
+     * Think like Custom Constructor will override/remove the default one
+     */
     public Patient() {
         // nothing to initialize
     }
 
     /*
      * To recap:
+     * *********
      * We have three methods of constructor,
      * but each one has different set of parameters
      * 
@@ -111,4 +130,6 @@ public class Patient {
     public static void printMsg() {
         System.out.println("Have a good day and stay safe!");
     }
+
+    // the BMI calculation method was covered in previous project
 } // class file
