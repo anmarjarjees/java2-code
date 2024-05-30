@@ -24,7 +24,7 @@ package bank_accounts;
 /*
  * NOTE:
  * class must always be "public"
- * Error:
+ * Error Message:
  * Illegal modifier for the class Member;
  * only public, abstract & final are permitted
  */
@@ -34,8 +34,8 @@ package bank_accounts;
  * }
  */
 public class Account {
-    // Yes, not good idea to identify class fields to be public!
-    // It should be private following the encapsulation concept
+    // Yes, not good idea to identify class fields to be "public"!
+    // It should be "private" following the rules of "Encapsulation"
     public String clientName;
 
     // The class fields should be private:
@@ -93,7 +93,7 @@ public class Account {
          * 2. has enough balance
          */
         if (amount <= 0) {
-            System.err.println("Invalid deposit amount!");
+            System.err.println("Invalid amount!");
         } else {
             // 1. check if the balance is 0 [no balance at all :-(]:
             if (this.balance == 0) {
@@ -115,13 +115,13 @@ public class Account {
     } // end withdraw()
 
     /*
-     * The main/parent class of Java "Object"
-     * > has a method "toString()"
-     * > is used to print any object of the class "Account"
-     * > we can "override" the toString() method:
-     * "override" => when we modify a method from the parent class
+     * The main/parent class in Java is "Object":
+     * > has a public method => "toString()"
+     * > this method is used to print any object of any class. => class "Account"
+     * > we can modify/change the behaviour of "toString()" method: "Override"
+     * "override" => when we modify a method from the "super" (main/parent) class
      * 
-     * The "Object":
+     * The class "Object":
      * Link: https://docs.oracle.com/javase/tutorial/java/IandI/objectclass.html
      * 
      * Using @override Annotation:
@@ -137,15 +137,19 @@ public class Account {
      */
     @Override
     public String toString() {
-        // override a method => change it's action/code inside the body
-        // return funny thing :-(
+        /*
+         * Override a method => change it's action/code inside the body
+         * we can modify it by returning any funny thing :-(
+         */
         // return "Da da!";
 
         /*
+         * Or we can modify it by return a useful thing:
          * return the current balance
-         * We can omit the user of "this" keyword
+         * 
+         * Notice that below, we can omit the user of "this" keyword
          */
-        return "Current Balance: " + this.balance; // no need for "this"
+        return "Current Balance: " + this.balance; // no need for "this" (optional)
     }
 
 } // class file

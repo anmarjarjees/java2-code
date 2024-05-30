@@ -44,7 +44,7 @@ public class Main {
         // account2: bank_accounts.Account@776ec8df
 
         /*
-         * The two output of the object values above (before overriding):
+         * The two output of the object values above [before overriding toString()]:
          * - bank_accounts.Account@4c873330
          * - bank_accounts.Account@776ec8df
          * 
@@ -52,10 +52,15 @@ public class Main {
          * this method is named toString()
          * 
          * so printing any object => call this method
+         * 
+         * .toString() Returns a string representation of the object.
+         * 
+         * The original return String template => package_name.ClassName@xxxxxxxx
+         * return getClass().getName() + "@" + Integer.toHexString(hashCode());
          */
 
         Account account3 = new Account();
-        // testing ".toString()"
+        // testing ".toString()": String java.lang.Object.toString()
         // notice that we don't need to attach this method "toString()"
         // it will be invoked by java when when we are tempted to print an object:
         System.out.println("account3: " + account3.toString());

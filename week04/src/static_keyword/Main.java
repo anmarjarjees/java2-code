@@ -44,7 +44,7 @@ public class Main {
         user3.greetAll();
 
         /*
-         * Error:
+         * Warning Message:
          * "The static method hiAll() from the type User
          * should be accessed in a static way"
          * 
@@ -63,6 +63,37 @@ public class Main {
         // The field User.totalUsers is not visible [private]
         // System.out.println(User.totalUsers);
 
+        /*
+         * Same Warning Message for => user1.doCalculation();
+         * The static method doCalculation()
+         * from the type User should be accessed in a static way
+         */
+        // user1.doCalculation();
+
+        // ** Incorrect Way ** => objectName.anyStaticMethod()
+        // ** Correct Way ** => ClassName.anyStaticMethod()
+
+        // Ask the user to choose: 1 for squaring a number or 2 for dividing it by 2:
+        /*
+         * System.out.println
+         * ("Enter 1 for squaring the number or 2 for dividing the number by 2");
+         * Scanner sc = new Scanner(System.in);
+         * 
+         * you can continue the rest...
+         */
+
+        // Hard Coding the values just for quick demo:
+        int userChoice = 1;
+        double userNumber = 90;
+
+        User.doCalculation(userNumber, userChoice);
+
+        // calling/invoking our custom method "getFactorial()":
+        System.out.println("The factorial of 5 is :" + getFactorial(5));
+        System.out.println("The factorial of 3 is :" + getFactorial(3));
+        System.out.println("The factorial of 0 is :" + getFactorial(0));
+
+        // Finally:
         // Practice the class "Client" (self-study) :-)
         // ********************************************
         // now we CANNOT target/access the other class "Client" fields directly:
@@ -80,19 +111,18 @@ public class Main {
         Client client4 = new Client("Martin Smith", "Golden Account Type");
 
         Client client5 = new Client("Kate Wilson", "Silver Account Type");
-
-        // Finally:
-        // calling our custom method "getFactorial()":
-        System.out.println("The factorial of 5 is :" + getFactorial(5));
-        System.out.println("The factorial of 3 is :" + getFactorial(3));
-        System.out.println("The factorial of 0 is :" + getFactorial(0));
     } // main()
 
-    // Below we can create own custom method(s):
-    // find/return the factorial:
-    // 5! = 5 * 4 * 3 * 2 * 1
-    // 3! = 3 * 2 * 1
-    // 0! = 1
+    /*
+     * To recap from Java Level#1:
+     * ***************************
+     * Below we can create own custom method(s):
+     * find/return the factorial of any number:
+     * 5! = 5 * 4 * 3 * 2 * 1
+     * 3! = 3 * 2 * 1
+     * 0! = 1
+     */
+
     private static int getFactorial(int number) {
         /*
          * number = 5
