@@ -1,9 +1,17 @@
 # Week05 Packages and Code Files Sequence:
 - inc_dec_review
-- inheritance_part1
+    - IncDecRev.java
+- overload_review
+    - Total.java
     - Main.java
-    - Rand.java
-- example_randomize
+- random_intro
+    - RandomClass.java
+- guessing_games
+    - NumberGuess.java
+- inheritance_intro
+    - AnyRandom.java
+- guessing_games
+    - AnyGuess.java
 
 ## Getting Started
 
