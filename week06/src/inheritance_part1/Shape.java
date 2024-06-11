@@ -1,4 +1,4 @@
-package inheritance_part2;
+package inheritance_part1;
 
 /**
  * Shape could the super class

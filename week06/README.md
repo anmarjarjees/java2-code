@@ -1,11 +1,14 @@
 # Week06 Packages and Code Files Sequence:
-- inheritance_part2
-    - Shape.java and Square.java
+- inheritance_part1
+    - Shape.java & Square.java (extends keyword)
     - Vehicle.java => The superclass
     - Car.java => subclass of Vehicle
+    - Motorcycle.java => subclass of Vehicle (Tasks to finish)
     - Truck.java => subclass of Vehicle **(remember it has an error)**
     - Main.java => The main class that contains main() method
     - Employee.java => "final" class: cannot be extended, just for creating objects
+- protected_demo
+    - App.java
 
 ## Getting Started
 

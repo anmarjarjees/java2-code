@@ -1,11 +1,26 @@
 package patients; // we have a sub-folder named "patients"
 
+// OOP => Object-Oriented Programming =>  A PIE
 /*
- * Class can have two members:
- * - Properties (Attributes) => variables inside a class
+ * To recap, any Class can have two members:
+ * - Properties (Attributes/Class Fields) => variables inside a class
  * - Methods => functions inside a class
  * 
- * OOP => Object-Oriented Programming =>  A PIE
+ * In Java, the terms "fields," "properties," and "attributes" are often used interchangeably,
+ * but they can different in some ways:
+ *  
+ * 1. Fields: 
+ * Are variables that belong to a class. Fields are defined directly within the class body.
+ * Fields can have different access modifiers: private, protected, public
+ * 
+ * 2. Properties: 
+ * Might also refer to fields, but they can imply encapsulation, 
+ * typically when using "getter" and "setter" methods. 
+ * Properties are often associated with the combination of a private field 
+ * and public getter/setter methods.
+ * 
+ * 3. Attributes: 
+ * This term is also commonly used to refer to fields or properties within a class.
  */
 public class Patient {
     // 1. Class Properties/Attributes/Class fields: variables inside a class
