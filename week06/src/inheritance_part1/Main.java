@@ -43,11 +43,16 @@ public class Main {
         myMotorcycle.turn("right"); // Inherited method from Vehicle
         myMotorcycle.stopDriving(); // Inherited method from Vehicle
 
-        Car myFriendCar = new Car("Nissan", 2020, true, 2021, "Petrol", 4, "SUV", "AWD");
+        /*
+         * NOTE:
+         * We do have access to all the protected fields!
+         * because we are inside the same package (folder)
+         */
+        myCar.brand = "Nissan";
+        myCar.purchasedYear = 2014;
+        myCar.isPreowned = false;
 
-        myFriendCar.isPreowned = false;
-
-        if (myFriendCar.isPreowned) {
+        if (myCar.isPreowned) {
             System.out.println("It's a used car");
         } else {
             System.out.println("It's a new car");

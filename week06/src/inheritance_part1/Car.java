@@ -128,6 +128,7 @@ public class Car extends Vehicle {
          * with super() if the superclass does NOT the no-argument constructor
          */
 
+        // JAVA => Constructor call must be the first statement in a constructor
         // Call to the superclass (Vehicle) constructor:
         super(brand, year, isPreowned, purchasedYear, fuelType);
         // Link: https://docs.oracle.com/javase/tutorial/java/IandI/super.html
@@ -201,6 +202,9 @@ public class Car extends Vehicle {
          * Also, we added the keyword "super", but it's unnecessary!
          */
         System.out.println("Car Status: " + super.isPreowned);
+        System.out.println("Number of Doors: " + this.carType);
+        System.out.println("Car Type: " + this.carType);
+        System.out.println("Drive Type: " + driveType);
     }
 
     /*

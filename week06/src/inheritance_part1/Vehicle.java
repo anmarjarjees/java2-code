@@ -1,11 +1,13 @@
 package inheritance_part1;
 /*
+ * OOP => A PIE
  * Create a superclass named "Vehicle"
  * then make other subclass that extend the class "Vehicle":
  * - "Car" is a Vehicle
  * - "Truck" is a Vehicle
- * - "MotorCycle" is a Vehicle
- * - "Airplane" (Bad => Doesn't make sense)
+ * - "Motorcycle" is a Vehicle
+ * - "Airplane" is a Vehicle (Bad => Doesn't make sense)
+ * - 'is a' OR 'is a type of'
  */
 
 /* 
@@ -16,6 +18,10 @@ package inheritance_part1;
 * The class from which the subclass is derived is called a "superclass" 
 * (also a base class or a parent class). 
 
+ * In Java:
+ * - Vehicle => Superclass
+ * - Car => subclass
+ * 
 - Java: Superclass and Subclass 
 - PHP: Parent class and Child Class
 - C#: Base Class and Derived Class
@@ -74,7 +80,7 @@ public class Vehicle {
      */
 
     /*
-     * The Vehicle class has 2 fields/attributes
+     * The Vehicle class has 5 fields/attributes
      * Common Properties for every vehicle type/kind:
      * - brand
      * - year
@@ -112,12 +118,12 @@ public class Vehicle {
      * Our custom Constructor that has 5 parameters
      * to initialize the class fields:
      */
-    public Vehicle(String brand, int year, boolean isPreowned, int purchasedYear, String fuelType) {
+    public Vehicle(String brand, int year, int purchasedYear, String fuelType, boolean isPreowned) {
         this.brand = brand;
         this.year = year;
-        this.isPreowned = isPreowned;
         this.purchasedYear = purchasedYear;
         this.fuelType = fuelType;
+        this.isPreowned = isPreowned;
         // In PHP => $this->brand = $brand;
     } // constructor:
 
@@ -128,14 +134,19 @@ public class Vehicle {
      * If any class is shipped with the default constructor (no parameter),
      * why we have/need to write it below?
      * 
-     * Answer-part1:
-     * When we add the custom constructor, it will disable the default one
-     * Then we can ignore the default one in case if we don't want to use it in the
-     * subclasses
+     * Reason:
+     * *******
+     * When we add the custom constructor, it will disable the default one,
+     * So we need to explicitly define the constructor
+     * with no-arguments/no-parameters
      * 
-     * Answer-part2:
+     * Case#1:
      * we need again to declare the default one explicitly
-     * because we need to use in the subclass, for example "Truck"
+     * if we need to create a new object/instance without initialization
+     * 
+     * Case#2:
+     * we need again to declare the default one explicitly
+     * if we need to use it in a subclass, for example "Truck"
      */
 
     // Try to remove/add the comment from this no-argument constructor:
@@ -172,9 +183,11 @@ public class Vehicle {
         System.out.println("Fuel Type: " + fuelType);
     }
 
-    // we will add this method to get a record/list about the major recent
-    // maintenance only
-    public void printRecord(String fixPart, double cost) {
+    /*
+     * we will add this method to get a record/list
+     * about the major recent maintenance only
+     */
+    public void printMaintainRecord(String fixPart, double cost) {
         System.out.println("\nRepair and Fix Report:");
         System.out.println("What to fix: " + fixPart);
         System.out.println("Total Cost: " + cost);

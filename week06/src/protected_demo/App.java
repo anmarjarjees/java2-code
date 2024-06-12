@@ -1,5 +1,6 @@
 package protected_demo;
 
+import inheritance_part1.Car;
 import inheritance_part1.Vehicle;
 
 /* 
@@ -7,13 +8,28 @@ import inheritance_part1.Vehicle;
  */
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+        Car myFriendCar = new Car("Nissan", 2020, true, 2021, "Petrol", 4, "SUV", "AWD");
+        /*
+         * NOTE:
+         * We don't have access to the protected fields!
+         * Because we are NOT in the same package:
+         * 
+         * protected field/method
+         * are only visible inside their package
+         */
+
+        // Error: The field Vehicle.brand is not visible
+        // myFriendCar.brand = "Dodge";
+
+        // Error: any cannot be resolved or is not a field
+        // myFriendCar.any = "nothing";
 
         // Just simple quick object with default values from VS Code:
-        Vehicle vehicle1 = new Vehicle(null, 0, false, 0, null);
+        Vehicle vehicle1 = new Vehicle(null, 0, 0, null, false);
 
         /*
-         * "printVehicleInfo()"" method is defined as "public"
+         * "printVehicleInfo()" method is defined as "public"
          */
         vehicle1.printVehicleInfo();
         /*
