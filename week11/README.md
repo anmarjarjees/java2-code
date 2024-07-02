@@ -1,8 +1,6 @@
 # Week11 Packages and Code Files Sequence:
-- exceptions_part1
-    - C1ExceptionIdea.java
-    - C2ExceptionDemo.java
-    - C3ExceptionMore.java
+- exceptions_part1 (The review from Java level 1)
+    - Please refer to my code example (project of week14) of [Java Level#1 - Exception Intro](https://github.com/anmarjarjees/java1-code/tree/main/week14)
     
 ## Getting Started
 

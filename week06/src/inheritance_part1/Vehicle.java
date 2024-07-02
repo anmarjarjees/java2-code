@@ -71,12 +71,16 @@ public class Vehicle {
      * 
      * Protected Members (Fields/Methods):
      * ***********************************
-     * - Can be accessed by any class within the "same package" (folder),
+     * - Can be accessed by "any class" within the "same package" (folder),
      * as well as by "subclasses" in "any package",
      * regardless of whether the subclass is in the same package or not.
      * - CANNOT be accessed by classes outside their package,
      * except by subclasses
      * - Can be transferred to the subclasses in any package within a project :-)
+     * 
+     * To recap "protected" members are accessible in these 2 cases only:
+     * Same Package: All classes in the same package.
+     * Subclasses: All subclasses, even if they are in different packages
      */
 
     /*
