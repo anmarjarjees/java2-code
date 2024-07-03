@@ -1,21 +1,33 @@
 # Week09 Packages and Code Files Sequence:
-- inheritance_part3
+- inheritance_demo2
     - package1
         - Vehicle.java
-        - Person.java
         - Car.java
-        - Animal.java
+        - Package1Main.java
+        - Animal.java (Empty class for importing demo)
+        - Person.java (Empty class for importing demo)
     - package2
         - Truck.java
+        - Package2Main.java
     - Main.java
-- polymorphism_review:
-    - Perimeter.java
+- polymorphism_review
+    - Perimeter.java (Polymorphism: Overloading)
     - Shape.java
     - Triangle.java
     - Square.java
     - Rectangle.java
     - Main.java
-    
+- relationships
+    - Computer.java
+    - HardDrive.java
+    - Main.java
+- abstraction
+    - LoginService.java => the idea of "abstraction"
+    - Shape.java => the keyword "abstraction"
+    - Rectangle.java => subclass of "Shape"
+    - Spaceship.java => simple demo of UML Class Diagram
+    - Main.java
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

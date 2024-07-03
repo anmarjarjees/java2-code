@@ -1,4 +1,4 @@
-package about_relationships;
+package relationships;
 
 public class HardDrive {
     public String type; // HDD or SSD
@@ -13,4 +13,5 @@ public class HardDrive {
         size = hdSize;
         this.dimensions = dimensions;
     }
+
 }

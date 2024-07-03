@@ -1,4 +1,4 @@
-package inheritance_part3.package1;
+package inheritance_demo2.package1;
 
 /* 
  * Car extends "Vehicle" within the same package

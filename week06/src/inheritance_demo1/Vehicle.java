@@ -1,4 +1,4 @@
-package inheritance_part1;
+package inheritance_demo1;
 /*
  * OOP => A PIE
  * Create a superclass named "Vehicle"

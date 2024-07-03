@@ -17,14 +17,6 @@ public class Rectangle extends Shape {
         // In Py: self.value2 = value2;
     }
 
-    public void setValue1(double value1) {
-        this.value1 = value1;
-    }
-
-    public void setValue2(double value2) {
-        this.value2 = value2;
-    }
-
     // Overriding => override the method calcPerimeter()
     @Override
     public double calcPerimeter() {
@@ -36,5 +28,5 @@ public class Rectangle extends Shape {
     public String toString() {
         return "Rectangle";
     }
-
 }
+// class

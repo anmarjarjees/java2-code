@@ -1,19 +1,10 @@
 # Week10 Packages and Code Files Sequence:
-- about_abstraction
-    - LoginService.java => the idea of "abstraction"
-    - Shape.java => the keyword "abstraction"
-    - Rectangle.java => subclass of "Shape"
-    - Cat.java => bad example demo
-    - Main.java
 - about_interfaces
     - PaymentCalculator.java
     - JuniorLevel.java
     - SeniorLevel.java
     - Main.java
-- about_relationships:
-    - Computer.java
-    - HardDrive.java
-    - Main.java
+
 
 ## Getting Started
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

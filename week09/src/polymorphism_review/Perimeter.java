@@ -7,6 +7,9 @@ package polymorphism_review;
 
 // Polymorphism: Overloading
 
+/**
+ * Perimeter
+ */
 public class Perimeter {
 
     // for the square shapes:
@@ -17,6 +20,13 @@ public class Perimeter {
     public double getPerimeter(int value) {
         return value * 4;
     }
+
+    // Wrong Example of Overloading => different return data type
+    /*
+     * public int getPerimeter(int value) {
+     * return value * 4;
+     * }
+     */
 
     // for any rectangle:
     public double getPerimeter(double value1, double value2) {
@@ -30,6 +40,8 @@ public class Perimeter {
 
     // for any Quadrilateral:
     public double getPerimeter() {
-
+        // do it :-)
+        return 0;
     }
+
 }

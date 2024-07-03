@@ -1,7 +1,7 @@
 package protected_demo;
 
-import inheritance_part1.Car;
-import inheritance_part1.Vehicle;
+import inheritance_demo1.Car;
+import inheritance_demo1.Vehicle;
 
 /* 
  * Link: https://docs.oracle.com/javase%2Ftutorial%2F/java/javaOO/accesscontrol.html

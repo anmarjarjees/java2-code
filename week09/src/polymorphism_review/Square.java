@@ -12,11 +12,6 @@ public class Square extends Shape {
         this.length = length;
     }
 
-    /*
-     * @Override (to recap):
-     * Indicates that a method declaration is intended to override a method
-     * declaration in a supertype.
-     */
     @Override
     public double calcPerimeter() {
         return this.length * 4;

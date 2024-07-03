@@ -1,6 +1,8 @@
 # Week06 Packages and Code Files Sequence:
-- inheritance_part1
+- inheritance_demo1
     - Shape.java & Square.java (extends keyword)
+    - Cat.java => bad example 
+    - Computer.java => bad example 
     - Vehicle.java => The superclass
     - Car.java => subclass of Vehicle
     - Motorcycle.java => subclass of Vehicle (Tasks to finish)

@@ -1,4 +1,4 @@
-package about_abstraction;
+package abstraction;
 
 public class LoginService {
 

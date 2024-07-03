@@ -1,4 +1,4 @@
-package inheritance_part1;
+package inheritance_demo1;
 
 /*
  * "final", "static", "abstract" keywords are not part of "A PIE"

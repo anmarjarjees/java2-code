@@ -1,4 +1,4 @@
-package inheritance_part1;
+package inheritance_demo1;
 
 public class Motorcycle extends Vehicle {
     private boolean hasSidecar; // Indicates if the motorcycle has a sidecar

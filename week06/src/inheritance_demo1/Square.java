@@ -1,4 +1,4 @@
-package inheritance_part1;
+package inheritance_demo1;
 /*
  * Two keywords:
  * - extends => with inheritance OOP concept

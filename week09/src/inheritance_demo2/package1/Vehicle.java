@@ -1,4 +1,4 @@
-package inheritance_part3.package1;
+package inheritance_demo2.package1;
 
 /* 
  * Using this class as blueprint (template) to create object(s)
@@ -16,23 +16,22 @@ public class Vehicle {
     public String province = "Ontario";
 
     /*
-     * IMPORTANT NOTE TO RECAP:
-     * ************************
+     * IMPORTANT NOTE TO REVIEW:
+     * *************************
      * To make any member (field/method) from the parent class
      * sharable with the child class, this member CANNOT be "private"
      * to solve this issue in OOP, two solution:
      * 
      * 1) We can set this field to be "public",
      * in such case the subclass can access it.
-     * But it will be also accessed from all the other classes also
+     * and it will be also accessed from all the other classes also
      * and it's against the idea of "encapsulation"! so it's not the ideal solution
      * 
      * 2) We can use the keyword "protected",
      * which means this member can be accessed
-     * from the child class or within the subclass but it cannot be accessed
-     * outside the super class or outside the subclass
+     * from all the other classes inside the "same package"
      * 
-     * so the access "protected" is only for the children of the parent class
+     * it can be access by all the subclasses in any package
      * 
      * Below We set the "isPreOwned" instance field in Vehicle to a "protected"
      * access modifier.
@@ -44,9 +43,9 @@ public class Vehicle {
      */
 
     /*
-     * protected =>
-     * - can ONLY be accessed by the subclasses:
-     * - Any subclass (inside or outside the package)
+     * protected member => can be accessed by:
+     * - all classes (inside the same package)
+     * - any subclass (inside or outside the same package)
      */
     protected boolean isPreowned = false; // New Car
 
@@ -61,4 +60,26 @@ public class Vehicle {
      * project only)
      */
     String owner;
+
+    /*
+     * Class Constructors is an example of "Overloading"
+     */
+    public Vehicle() {
+    }
+
+    public Vehicle(String brand, String type, String wheels, int year) {
+        this.brand = brand;
+        this.type = type;
+        this.wheels = wheels;
+        this.year = year;
+    }
+
+    public void ShowVehicleInfo() {
+        // System.out.printf();
+        System.out.println("\n " + brand + "\n " + type + "\n " + wheels + "\n " + year);
+    }
+
+    protected void printInfo() {
+        System.out.println("Main Vehicle!");
+    }
 }

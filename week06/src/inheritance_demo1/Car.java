@@ -1,4 +1,4 @@
-package inheritance_part1;
+package inheritance_demo1;
 /*
  * the keyword for inheritance: is a
  * Car is a Vehicle => Yes => Inheritance Relationship

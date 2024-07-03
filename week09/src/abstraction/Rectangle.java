@@ -1,4 +1,4 @@
-package about_abstraction;
+package abstraction;
 
 /*
 Rectangle is a shape => inheritance
@@ -10,6 +10,7 @@ Error:
 The type Rectangle must implement the inherited abstract method Shape.calcArea()
  */
 public class Rectangle extends Shape {
+
     private double value1;
     private double value2;
     // Perimeter = 2 × (a + b)
@@ -21,6 +22,8 @@ public class Rectangle extends Shape {
         // In Py: self.value2 = value2;
     }
 
+    // 2 public methods:
+    @Override
     double calcArea() {
         return value1 * value2;
     }
@@ -28,6 +31,7 @@ public class Rectangle extends Shape {
     @Override
     public double calcPerimeter() {
         return 2 * (value1 + value2);
+
     }
 
 }
