@@ -16,12 +16,12 @@ package about_interfaces;
  * so an interface is a completely "abstract class" 
  * it's only used to group related methods with empty bodies
  * 
- * Interface determine the behaviour of the class that will use it
+ * Interface determine the behaviour of the class that will use it.
  * 
  * Java also required to have the name of the interface and the file name 
  * both to be the same:
- * current file name: PaymentCalculator
- * the interface name: PaymentCalculator
+ * > Current file name: PaymentCalculator.java
+ * > Interface name: PaymentCalculator
  * 
  * If the interface name is different,
  * Java will throw this error:
@@ -78,7 +78,7 @@ public interface PaymentCalculator {
      * 
      * They don't have access modifiers, so by default, they are set to "public"
      * So when we implement these two methods in the subclasses,
-     * we don't have to explicitly identify them as public
+     * we don't have to explicitly identify them as "public"
      * by adding the keyword "public"
      * 
      * To recap:

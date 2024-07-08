@@ -1,13 +1,21 @@
 package about_interfaces;
 
+/*
+ * The "SeniorLevel" class implements the "PaymentCalculator" interface,
+ * providing specific implementations for the methods defined in the interface.
+ * "SeniorLevel" in this example represents employees with 10+ years of experience.
+ */
 public class SeniorLevel implements PaymentCalculator {
 
     @Override
     public double calculateGross(double hours) {
-        // Initialization means providing a default value for a variable at the time of
-        // declaration
-        double payRate = 35; // initialize the variable "payRate" with the value of $35
-        // 3. Hours x Pay Rate:
+        // Initialize a variable:
+        // Providing a default value for a variable at the time of declaration
+
+        // Initialize the variable "payRate" with the value of $35 per hour
+        double payRate = 35;
+
+        // Calculate pay per week: Hours x Pay Rate
         double payPerWeek = hours * payRate;
         return payPerWeek;
     }
