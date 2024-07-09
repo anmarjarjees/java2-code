@@ -1,10 +1,7 @@
 # Week13 Packages and Code Files Sequence:
-- exceptions_part3
-    - C1....java 
-    - C2....java 
-    - C3....java
-    - OutOfRangeException.java
-
+- advanced_interfaces
+    - Files to be added soon...
+    
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

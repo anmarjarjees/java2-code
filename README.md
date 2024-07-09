@@ -2,15 +2,15 @@
 
 Java 2 Lectures (In-Class) Code
 
-This repo is build based on the following repos. For more details information and comments, refer to these resource:
+This repo is build based on my following repos. For more details information and comments, refer to these main resource:
 - [JAVA Essentials](https://github.com/anmarjarjees/java-essentials)
 - [JAVA OOP and UML](https://github.com/anmarjarjees/java-oop-uml)
 - [JAVA Extra](https://github.com/anmarjarjees/java-extra)
 - [Java How To Program By by Paul Deitel and Harvey Deitel](https://github.com/anmarjarjees/JavaHowToProgram11e_EarlyObjects)
 
-## NOTES:
+## IMPORTANT NOTES:
 - Every week folder in this repo is a separate Java project
-- Each project contains the "src" folder as I gitignored the others
+- Each project contains only the "src" folder as I gitignored the others
 - Each project has a README.MD that contains the code file sequence
 
 ---

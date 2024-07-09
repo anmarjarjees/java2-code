@@ -1,11 +1,9 @@
 # Week12 Packages and Code Files Sequence:
-- files_part1
-    - C1CreateFile.java
-    - C2FileScanWrite.java
-- exceptions_part2
-    - C1FileException.java => First Solution
-    - C2FileException.java => Second Solution
-    - C3StackTraceEx.java
+- exceptions_part3
+    - C1....java 
+    - C2....java 
+    - C3....java
+    - OutOfRangeException.java
 
 ### NOTE: 
 This "week12" project folder contains a folder named "text-files" for saving the text files:

@@ -1,6 +1,12 @@
 # Week11 Packages and Code Files Sequence:
-- exceptions_part1 (The review from Java level 1)
-    - Please refer to my code example (project of week14) of [Java Level#1 - Exception Intro](https://github.com/anmarjarjees/java1-code/tree/main/week14)
+- files_part1
+    - C1CreateFile.java
+    - C2FileScanWrite.java
+- exceptions_part2
+    - C1FileException.java => First Solution
+    - C2FileException.java => Second Solution
+    - C3StackTraceEx.java
+
     
 ## Getting Started
 
