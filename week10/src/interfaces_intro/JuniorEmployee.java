@@ -2,13 +2,19 @@ package interfaces_intro;
 
 /* 
  * Ask ourselves:
- * is "JuniorLevel" is a "PaymentCalculator"?
+ * is "JuniorEmployee" is a "PaymentCalculator"?
  * There is no direct connection between the two classes!
  * 
- * However, we can make "JuniorLevel" class implement the "PaymentCalculator" interface
+ * However, we can make "JuniorEmployee" class implement the "PaymentCalculator" interface
  * to provide specific implementations of the methods defined in the interface.
  */
-public class JuniorLevel implements PaymentCalculator {
+
+/*
+* The "JuniorEmployee" class implements the "PaymentCalculator" interface,
+* providing specific implementations for the methods defined in the interface.
+* "JuniorEmployee" in this example represents employees with less than10 years of experience.
+*/
+public class JuniorEmployee implements PaymentCalculator {
 
     @Override
     public double calculateGross(double hours) {

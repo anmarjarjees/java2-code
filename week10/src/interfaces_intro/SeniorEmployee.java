@@ -1,11 +1,11 @@
 package interfaces_intro;
 
 /*
- * The "SeniorLevel" class implements the "PaymentCalculator" interface,
+ * The "SeniorEmployee" class implements the "PaymentCalculator" interface,
  * providing specific implementations for the methods defined in the interface.
- * "SeniorLevel" in this example represents employees with 10+ years of experience.
+ * "SeniorEmployee" in this example represents employees with 10+ years of experience.
  */
-public class SeniorLevel implements PaymentCalculator {
+public class SeniorEmployee implements PaymentCalculator {
 
     @Override
     public double calculateGross(double hours) {
