@@ -1,4 +1,4 @@
-package about_interfaces;
+package interfaces_intro;
 
 /* 
  * PaymentCalculator => to calculate the payment:
@@ -65,7 +65,20 @@ public interface PaymentCalculator {
      * and are terminated with a semicolon ";"
      */
 
-    // Remember that interface cannot have fully implemented methods
+    /*
+     * Remember that before Java 8,
+     * interface CANNOT have fully implemented methods
+     */
+
+    /*
+     * Below are examples of two "abstract" methods (without implementation):
+     * - calculateGross
+     * - doSomething
+     * 
+     * Just method signatures without implementations.
+     * Any class that implements this interface
+     * must provide implementations for these two methods.
+     */
     double calculateGross(double hours);
 
     void doSomething(int i, double x);
@@ -76,7 +89,8 @@ public interface PaymentCalculator {
      * - calculateGross
      * - doSomething
      * 
-     * They don't have access modifiers, so by default, they are set to "public"
+     * They don't have access modifiers,
+     * so by default, they are set to "public"
      * So when we implement these two methods in the subclasses,
      * we don't have to explicitly identify them as "public"
      * by adding the keyword "public"
@@ -87,6 +101,40 @@ public interface PaymentCalculator {
      */
 
     /*
-     * Interface can contain abstract methods, default methods, and static methods
+     * Below is an examples of a "static" method:
+     * - testStaticMethod
+     * 
+     * Are methods with implementations
+     * They belong to the interface itself.
+     * They can be called without an instance of the implementing class
+     * They CANNOT be overridden by implementing classes
+     */
+    static void testStaticMethod() {
+        System.out.println("Interface Static Method");
+    }
+
+    /*
+     * Below is an examples of a "default" method:
+     * - testStaticMethod
+     * 
+     * Are methods with a default implementation.
+     * Classes that implement the interface
+     * can either use the default implementation or override it.
+     */
+    default void testDefaultMethod() {
+        System.out.println("Interface Default Method");
+    }
+    /*
+     * To recap, "Interfaces" can contain:
+     * 1- abstract methods: method signatures without implementations
+     * 
+     * 2- default methods: methods with a default implementation (since Java 8)
+     * 
+     * 3- static methods:
+     * > Since Java 8
+     * > methods with implementations
+     * > belong to the interface itself.
+     * > can be called without an instance of the implementing class
+     * > can be called using => InterfaceName.methodName()
      */
 }

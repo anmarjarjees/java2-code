@@ -1,4 +1,4 @@
-package about_interfaces;
+package interfaces_intro;
 
 /* 
  * Ask ourselves:

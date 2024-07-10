@@ -1,4 +1,4 @@
-package about_interfaces;
+package interfaces_intro;
 
 /*
  * In our main application,
@@ -13,9 +13,12 @@ public class Main {
 
         System.out.println("Employee1 Gross Pay: " + emp1.calculateGross(22));
         System.out.println("Employee2 Gross Pay: " + emp2.calculateGross(31));
-		
-		 // PaymentCalculator payment1 = new PaymentCalculator();
+
+        // PaymentCalculator payment1 = new PaymentCalculator();
         // Error: Cannot instantiate the type PaymentCalculator
         // Reason: PaymentCalculator is an interface
+
+        PaymentCalculator.testStaticMethod();
+        emp1.testDefaultMethod();
     }
 }

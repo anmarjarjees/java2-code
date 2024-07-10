@@ -1,5 +1,5 @@
 # Week10 Packages and Code Files Sequence:
-- about_interfaces
+- interfaces_intro
     - PaymentCalculator.java
     - JuniorLevel.java
     - SeniorLevel.java
