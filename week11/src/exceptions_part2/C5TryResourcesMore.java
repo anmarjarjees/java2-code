@@ -1,21 +1,20 @@
-package exceptions_part3;
+package exceptions_part2;
 
 /* 
  * Working with files requires the "File" class
- * from java.io package
+ * from "java.io" package
  */
 import java.io.File;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
- * C1TryResources
  * To recap:
  * This class will be used to execute our code,
  * We need to add PSVM method:
  */
-public class C2TryResourcesMore {
+public class C5TryResourcesMore {
     /*
      * In Java when we use resources, we follow these steps (milestones)
      * 1. Open a resource
@@ -51,8 +50,8 @@ public class C2TryResourcesMore {
          * Or create it inside the "src" folder:
          * > temp-files/numbers.txt
          */
-        File myInputFile = new File("src\\exceptions_part3\\temp-files\\numbers.txt"); // for reading
-        File myOutputFile = new File("src\\exceptions_part3\\temp-files\\result.txt"); // for writing
+        File myInputFile = new File("text-files\\numbers.txt"); // for reading
+        File myOutputFile = new File("text-files\\result.txt"); // for writing
         try (
                 // We can add more than one resource to be closed, each ends with ;
                 // notice the ; for the last resource statement is optional
@@ -67,8 +66,16 @@ public class C2TryResourcesMore {
                 // Or saving/writing them to the file:
                 pwWriteFile.println(scReadFile.nextInt());
             }
-        } catch (IOException e) {
+
+            // No need to close these two objects (open resources)
+            // scReadFile.close();
+            // pwWriteFile.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Exception Class Name: " + e.getClass());
+            // class java.io.FileNotFoundException
+
             System.out.print("Uncompleted operation: " + e.getMessage());
+            // (The system cannot find the path specified)
         } // catch
         /*
          * NOTE:

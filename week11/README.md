@@ -6,7 +6,8 @@
     - C1FileException.java => First Solution
     - C2FileException.java => Second Solution
     - C3StackTraceEx.java
-
+    - C4TryResourcesBasic.java
+    - C5TryResourcesMore.java
     
 ## Getting Started
 

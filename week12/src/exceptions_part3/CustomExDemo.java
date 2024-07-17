@@ -11,7 +11,7 @@ package exceptions_part3;
  * 
  * we will create our own exception :-)
  */
-public class C3CustomExDemo {
+public class CustomExDemo {
     /*
      * One of the solution:
      * throws OutOfRangeException

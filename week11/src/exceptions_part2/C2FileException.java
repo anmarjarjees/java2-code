@@ -19,8 +19,7 @@ public class C2FileException {
         try {
             myFile.createNewFile();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             System.out.println("Invalid Path!");
         } // Checked Exception
-    }
-}
+    } // main()
+} // class

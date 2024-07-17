@@ -5,6 +5,10 @@ package files_part1;
  * Dear students,
  * Working with Files, will generate a type of exception called:
  * "Checked Exception".
+ *
+ * We have two types of Exceptions:
+ * > "Checked Exception"
+ * > "Unchecked Exception"
  * 
  * We will cover the two types of exception in the coming examples
  * To focus on how to work with files,
@@ -24,22 +28,26 @@ import java.io.IOException;
 public class C1CreateFile {
     public static void main(String[] args) {
         /*
-         * 1. First creating a file object: myFile1
+         * 1. First creating an instance/object of type "File" class
          * 2. Passing the file name (or the directory name) to the constructor
          * 
          * NOTES:
+         * *****
          * > Creating a File object doesn't actually create a file,
          * it is just for representing the file to be create it later
-         * by using .createNewFile() method of the File object
+         * by using .createNewFile() public method of the File class
          * 
-         * NOTE:
-         * *****
-         * If we don't specify the path,
-         * the default path will the root folder for your Java project
+         * > If we don't specify the file path,
+         * the default path will be the root folder for your Java project
          * 
          * Link: https://www.w3schools.com/java/java_files_create.asp
          */
         try {
+            /*
+             * The code below specifies that the file name will be "testing1.txt"
+             * and inside the default location (current project folder)
+             * which is inside week11 directly:
+             */
             File myFile1 = new File("testing1.txt");
             /*
              * Creating a file inside a specific location,
@@ -52,21 +60,31 @@ public class C1CreateFile {
              * Q) How to quickly get the current path or the parent path?
              * A) Right click the file inside VS Code Explorer Window and choose:
              * > Copy Path:
-             * Drive:FullPath\java2-code\src\week12\file1_part1\C1CreateFile.java
+             * Drive:FullPath\java2-code\week11\src\files_part1\C2FileScanWrite.java
              * 
              * > Copy Relative:
-             * src\week12\file1_part1\C1CreateFile.java
+             * week11\src\files_part1\C1CreateFile.java
              */
 
             // Look at the two examples below:
-            File myFile2 = new File("src\\week12\\testing2.txt");
-            File myFile3 = new File("src\\week12\\file_operations\\testing3.txt");
+            /*
+             * We have specified that these two files will be created
+             * inside a folder named "text-files".
+             * Notice that we (as programmers) need to create this folder first
+             * 
+             * Path => text-files\testing2.txt
+             * Path => text-files\testing2.txt
+             */
+            File myFile2 = new File("text-files\\testing2.txt");
+            File myFile3 = new File("text-files\\testing3.txt");
 
             /*
-             * createNewFile() returns:
-             * > true if the named file does not exist and was successfully created
-             * 
-             * > false if the named file already exists
+             * createNewFile() methods:
+             * ************************
+             * > generates/throws "Unhandled exception type IOException"
+             * > returns boolean value:
+             * - true if the named file does not exist and was successfully created
+             * - false if the named file already exists
              */
             myFile1.createNewFile();
             myFile2.createNewFile();
@@ -93,10 +111,10 @@ public class C1CreateFile {
             // or calling the .getMessage() method of the e object:
             System.out.println(e.getMessage());
         } catch (Exception e) {
-            // TODO: handle exception
+            // to make sure your project can handle any exception
+            // we want this catch() to catch any exception
+            // This catch will handle any type of exception
             System.out.println("Something wrong!");
         }
-
     } // main()
-}
-// class
+} // class

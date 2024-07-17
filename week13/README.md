@@ -1,9 +1,5 @@
 # Week13 Packages and Code Files Sequence:
-- interfaces_more
-    - WorkCalculator.java (First Interface)
-    - BonusCalculator.java (Second Interface)
-    - Employee.java (The main class for implementing the two interfaces)
-    - Main.java (The main class to launch the application using the main() method)
+
     
 ## Getting Started
 

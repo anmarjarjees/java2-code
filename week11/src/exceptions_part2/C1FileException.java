@@ -67,6 +67,7 @@ public class C1FileException {
         Scanner sc = new Scanner(System.in);
         int intNumber = sc.nextInt();
         System.out.println("Integer Value: " + intNumber);
+        sc.close();
 
         /*
          * Creating a file with a wrong path
@@ -112,7 +113,7 @@ public class C1FileException {
         try {
             /*
              * we can place all our code inside the try block,
-             * or just the lines that throw exceptions
+             * or just the lines/code that throw exceptions
              */
             myFile.createNewFile();
             /*
@@ -145,7 +146,6 @@ public class C1FileException {
              * @throws...
              */
         } catch (IOException e) {
-            // TODO: handle exception
             System.out.println("Invalid Path!");
         }
     } // main()
