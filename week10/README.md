@@ -4,6 +4,11 @@
     - JuniorLevel.java
     - SeniorLevel.java
     - Main.java
+- interfaces_more
+    - WorkCalculator.java (First Interface)
+    - BonusCalculator.java (Second Interface)
+    - Employee.java (The main class for implementing the two interfaces)
+    - Main.java (The main class to launch the application using the main() method)
 - exceptions_part1 (The review from Java level 1)
     - Please refer to my code example (project of week14) of [Java Level#1 - Exception Intro](https://github.com/anmarjarjees/java1-code/tree/main/week14)
 

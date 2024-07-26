@@ -9,26 +9,27 @@ package exceptions_part3;
  * - ArrayIndexOutOfBoundsException
  * - IOException
  * 
- * we will create our own exception :-)
+ * We will add a custom method to:
+ * - Throw a built-in Java Exception (First)
+ * - Throw our own exception after creating it (Later)
+ */
+/**
+ * CustomExDemo
  */
 public class CustomExDemo {
+
     /*
-     * One of the solution:
-     * throws OutOfRangeException
+     * This class will be used to run our application,
+     * adding the main() method:
+     * PSVM => S => "static"
      */
     public static void main(String[] args) {
-        // We will call our method inside the main()
+        // We will call our method(s) inside the main()
         /*
          * Remember: Because main() is static,
          * so any method we want to call/run inside the main MUST be static
          */
-
-        /*
-         * We might need our app to throw an exception
-         * based on our custom code/methods (based on the programmer's perspective)
-         */
-
-        double result = getGrossPayment(20, 25); // ok
+        double result = getGrossPayment(30, 25);
         System.out.println(result);
 
         // the code below is commented to test our own exception
@@ -38,23 +39,26 @@ public class CustomExDemo {
          */
 
         /*
-         * Hard coding the values for simplicity:
+         * Hard coding the values for quick demo and simplicity:
          */
-
         double exam1 = 190.43;
         double exam2 = 91.89;
+        /*
+         * We might need our app to throw an exception
+         * based on our custom code/methods (based on the programmer's perspective)
+         */
         /*
          * Java will show a compilation error:
          * "Unhandled exception type OutOfRangeException"
          */
+        double avg;
         try {
-            double avg = getAverage(exam1, exam2);
+            avg = getAverage(exam1, exam2);
             System.out.println("Average of " + exam1 + " and " + exam2 + " is: " + avg);
         } catch (OutOfRangeException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } // exception
-        System.out.println(result);
+        } // catch exception
     } // main()
 
     /*
@@ -62,12 +66,15 @@ public class CustomExDemo {
      * by multiplying the "hours" worked by the "pay rate"
      * 
      * With a condition that hours cannot exceed the 40 as a maximum
+     * This method should NOT accept more than 40 hours
+     * 
+     * if we put 40 => this method will "throw" an exception
      */
-    public static double getGrossPayment(double hours, double payRate) {
-        if (hours < 0 || hours > 40) {
-
+    private static double getGrossPayment(double hours, double payRate) {
+        if (hours <= 0 || hours > 40) {
+            // Invalid Input:
             // could be like this:
-            // System.out.println("Maximum must be 40 hours");
+            // System.out.println("Minimum 1 and Maximum must be 40 hours");
             // return 0;
 
             // But we will use a Java Exception below:
@@ -75,18 +82,20 @@ public class CustomExDemo {
             /*
              * using "throw" then the instantiation of an existing exception
              * Java provides many exceptions that we can use
-             * or we can create a new exception class based on our needs (we did it)
+             * or we can create a new exception class based on our needs
              * 
              * In this case, it's invalid (illegal)
              * to put more than 40 hours or less than 0,
              * 
              * Two Solutions:
              * 1) We can use the Java exception class "IllegalArgumentException"
-             * and passing to the constructor our custom message
+             * and passing to this class constructor our custom message
              * 
-             * 2) Using our exception
+             * 2) Using our own custom exception
              */
+
             throw new IllegalArgumentException("Hours has to be between 0 to 40");
+
             /*
              * NOTE: if we look inside the "IllegalArgumentException" class:
              * 
@@ -105,7 +114,8 @@ public class CustomExDemo {
     } // getGrossPayment()
 
     /*
-     * Below, we are adding our own custom exception "OutOfRangeException"
+     * Creating a method tha throws a custom exception
+     * we are adding our own custom exception named "OutOfRangeException"
      * to this method :-)
      * 
      * Accepts two numeric values:
@@ -119,25 +129,23 @@ public class CustomExDemo {
          * ((value1 < 0 || value1 > 100) || (value2 < 0 || value2 > 100))
          */
         if (value1 < 0 || value1 > 100 || value2 < 0 || value2 > 100) {
-
             // We will use our custom exception below :-)
             /*
              * Notice below because our custom exception "OutOfRangeException"
-             * extends the "Exception" class so it's a "Checked Exception"
+             * extends the main "Exception" class so it's a "Checked Exception"
              * That's why we have this error:
              * Error: Unhandled exception type OutOfRangeException
              * 
-             * So we must either:
+             * Two solutions: we must either:
              * 1) specify it in our method signature
              * with the keyword "throw"
-             * - Throws ExceptionClassName
+             * - Template => throws ExceptionClassName
              * 
              * 2) or by adding try/catch as we explained before.
              * - Using Try and Catch
-             *
              */
             throw new OutOfRangeException();
-        }
+        } // end if
         return (value1 + value2) / 2;
     } // getAverage()
 } // class

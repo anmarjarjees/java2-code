@@ -1,17 +1,8 @@
 # Week12 Packages and Code Files Sequence:
 - exceptions_part3
-    - CustomExDemo.java
-    - OutOfRangeException.java
-- interfaces_more
-    - WorkCalculator.java (First Interface)
-    - BonusCalculator.java (Second Interface)
-    - Employee.java (The main class for implementing the two interfaces)
-    - Main.java (The main class to launch the application using the main() method)
-    
-### NOTE: 
-This "week12" project folder contains a folder named "text-files" for saving the text files:
-- numbers.txt
-- result.txt
+    - CustomExDemo.java (Example of using "throw exception" and our custom exception)
+    - OutOfRangeException.java (Our custom exception)
+    - RangeCheckDemo.java (another extra example using our custom exception)
 
 ## Getting Started
 
