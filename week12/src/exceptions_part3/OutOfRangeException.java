@@ -33,6 +33,7 @@ public class OutOfRangeException extends Exception {
      * - don't add any other custom constructor
      */
 
+    // Constructor with a custom message
     public OutOfRangeException(String msg) {
         /*
          * Calling the Constructor from the superclass "Exception"
@@ -55,6 +56,8 @@ public class OutOfRangeException extends Exception {
      * For this reason, removing the custom constructor:
      * Compilation Error => The constructor OutOfRangeException(String) is undefined
      */
+
+    // Default constructor calling the custom message constructor
     public OutOfRangeException() {
         this("Input value has to be between the specified range of values");
     }
