@@ -1,3 +1,6 @@
+/*
+ * A package is a sub-folder inside the main project folder "src": 
+ */
 package basic_intro;
 
 /* 
@@ -13,5 +16,15 @@ public class Coding {
     public static void main(String[] args) {
         // Simple output
         System.out.println("We do like Java :-)");
+
+        /*
+         * In VScode, just type:
+         * > sout then TAB
+         * Print to standard out
+         * System.out.println();
+         * 
+         * in Eclipse, type:
+         * > sout and press Ctrl + space.
+         */
     }
 }

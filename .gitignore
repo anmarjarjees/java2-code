@@ -7,6 +7,10 @@ p1_convert_demo/
 bin/
 lib/
 temp/
+weeks_packages/
+
+# temp ignore:
+week13/
 
 # Compiled class file
 *.class
