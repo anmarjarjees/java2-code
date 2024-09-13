@@ -4,12 +4,12 @@ public class PatientTest {
     public static void main(String[] args) {
         System.out.println("Patient Info Application:");
         /*
-         * We have 3 patients
-         * Alex Chow
-         * Sam Simpson
-         * Sally Grayson
+         * We will add 3 patients:
+         * - Alex Chow
+         * - Sam Simpson
+         * - Sally Grayson
          * 
-         * Creating 3 objects (instances)
+         * Creating 3 objects (instances) for each patient
          * 
          * Using the "default" Constructor
          * to construct these new objects
@@ -51,7 +51,7 @@ public class PatientTest {
          * The static method printMsg() from the type Patient
          * should be accessed in a static way
          */
-        // p1.printMsg();
+        // p1.printMsg(); // Bad Way! (incorrect way)
         Patient.printMsg();
     } // main()
 } // class file

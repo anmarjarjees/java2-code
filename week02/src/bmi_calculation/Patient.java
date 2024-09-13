@@ -44,15 +44,20 @@ public class Patient {
      * (which a constructor with parameters),
      * Java will invoke the default one that has no parameter
      * 
-     * Yes, we can add a constructor for initializing the values
-     * of weight and height, but we will do in next lectures.
-     * Instead, we will use "Getters" and "Setters"
+     * Yes, we can add a constructor for initializing the class fields:
+     * - firstName
+     * - lastName
+     * - weight
+     * - height
+     * But we will do in next lectures.
+     * Instead, we will use "Getters" and "Setters" for now:
      */
 
     // 2. Getters and Setters Methods:
     /*
-     * Getters => get the value of a private class field (property)
-     * Setters => set (assign) a value to a private class field (property)
+     * Getters => Public method to get the value of a private class field (property)
+     * Setters => Public method to set (assign) a value to a private class field
+     * (property)
      * 
      * - Getters and Setters are simply just methods:
      * - By convention: start with "get" and "set"
@@ -197,6 +202,8 @@ public class Patient {
         // the method pow() for the power:
         double bmi = weight / Math.pow(meter, 2);
         return bmi;
+        // Error: Unreachable code => (code will never execute)
+        // System.out.println(bmi);
     }
 
     /*
