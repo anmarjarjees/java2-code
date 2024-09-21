@@ -11,10 +11,9 @@ public class Patient {
      * - Class Variables [static] => can only be accessed by the Class name
      */
     // 1. Class Properties/Attributes/fields:
+    // Encapsulation => using "private"
     private String firstName; // "" by default => empty string
     private String lastName; // "" by default
-
-    // Encapsulation
     private double weight; // 0.0 by default
     private double height; // 0.0 by default
     // private int age; // no need for this variable
@@ -30,13 +29,14 @@ public class Patient {
     /*
      * > Using Multiple Constructors (methods)
      * > Is an example of "Polymorphism" (Multiple Forms)
-     * > "Polymorphism" can be implemented with "Overloading" and "Overriding"
+     * > "Polymorphism" has two types: "Overloading" or "Overriding"
      * - Overloading (Our current example) => Multiple Constructor Methods:
      * > Different set of parameters
-     * > Different data types
+     * > Different data types for the parameters
      * - Overriding (To be discussed later) => With "Inheritance"
      */
 
+    // Adding a custom Constructor (two parameters/arguments)
     // Constructor Parameters: String firstName & String lastName
     public Patient(String firstName, String lastName) {
         // Initializing the class fields
@@ -45,6 +45,7 @@ public class Patient {
         this.lastName = lastName;
     }
 
+    // Adding a custom Constructor (four parameters/arguments)
     // Constructor Parameters: String firstName & String lastName & weight & height
     public Patient(String firstName, String lastName, double weight, double height) {
         this.firstName = firstName;

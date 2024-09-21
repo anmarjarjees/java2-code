@@ -10,8 +10,34 @@ import java.util.ArrayList;
 public class MyArrayList {
     // psvm
     public static void main(String[] args) {
-
+        /*
+         * ArrayList:
+         * - is a part of the Java Collections Framework
+         * - is a resizable array implementation of the List interface
+         * 
+         * ArrayList can grow or shrink as you add or remove elements
+         *
+         */
         ArrayList<String> myLanguages = new ArrayList<>();
+        /*
+         * ArrayList<String>
+         * <String> => This is a type parameter
+         * new ArrayList<>() => for instantiating a new ArrayList object
+         * <> is known as the diamond operator
+         * 
+         * NOTE:
+         * ArrayList<String> is an example of Java generics.
+         * Generics allow us to define classes, interfaces, and methods with a
+         * placeholder for types,
+         * which provides type safety and eliminates the need for casting.
+         * 
+         * Generic Class: ArrayList is a generic class.
+         * When we specify <String>, we're creating an instance of ArrayList
+         * that can only hold String objects.
+         * 
+         * Generics help us catch errors at compile time rather than at runtime,
+         * making your code safer and cleaner.
+         */
         myLanguages.add("HTML"); // index 0
         myLanguages.add("CSS"); // index 1
         myLanguages.add("JS"); // index 2

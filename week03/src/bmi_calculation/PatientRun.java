@@ -8,7 +8,7 @@ public class PatientRun {
         // passing first and last names
         Patient p1 = new Patient("Alex", "Chow");
 
-        // passing the first/last names and width/height
+        // passing the first/last names and weight/height
         Patient p2 = new Patient("Alexa", "Chow", 78, 173);
 
         // just empty object (no passing arguments) and using setters to set its values:

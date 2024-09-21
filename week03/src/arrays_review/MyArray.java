@@ -12,6 +12,9 @@ import java.util.Scanner;
  */
 public class MyArray {
     public static void main(String[] args) {
+
+        // simple variable that has one value of 7
+        int myLuckyNumber = 7;
         /*
          * Array:
          * - One variable that can save multiple values
@@ -27,10 +30,12 @@ public class MyArray {
          * Line#2 => The length
          * Line#3 => Adding the values
          */
+
+        // Lucky Numbers: 9, 3, 10, 25, 30
         // 1. Declare an empty array variable
         int[] myLuckyNumbers;
 
-        // 2. Then Initialize the array with 9 empty places
+        // 2. Then Initialize the array with 5 empty places
         myLuckyNumbers = new int[5]; // specify the length
 
         /*
@@ -123,6 +128,13 @@ public class MyArray {
          * For more details:
          * https://github.com/anmarjarjees/java1-code/blob/main/week09/src/using_arrays/
          */
+
+        // Printing each element without loop structure!
+        System.out.println(mySubjects[0]); // "HTML"
+        System.out.println(mySubjects[1]); // "CSS"
+        System.out.println(mySubjects[2]);
+        System.out.println(mySubjects[3]);
+        System.out.println(mySubjects[4]);
 
         /*
          * Finally => Quick Review About Loops:
