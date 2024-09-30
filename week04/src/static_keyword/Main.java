@@ -64,11 +64,11 @@ public class Main {
         // System.out.println(User.totalUsers);
 
         /*
-         * Same Warning Message for => user1.doCalculation();
-         * The static method doCalculation()
+         * Same Warning Message for => user1.calculate();
+         * The static method calculate()
          * from the type User should be accessed in a static way
          */
-        // user1.doCalculation();
+        // user1.calculate();
 
         // ** Incorrect Way ** => objectName.anyStaticMethod()
         // ** Correct Way ** => ClassName.anyStaticMethod()
@@ -86,7 +86,7 @@ public class Main {
         int userChoice = 1;
         double userNumber = 90;
 
-        User.doCalculation(userNumber, userChoice);
+        User.calculate(userNumber, userChoice);
 
         // calling/invoking our custom method "getFactorial()":
         System.out.println("The factorial of 5 is :" + getFactorial(5));

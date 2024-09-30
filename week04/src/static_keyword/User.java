@@ -20,7 +20,7 @@ public class User {
     // Fields (attributes):
     // variables inside a class:
     // Yes, not good idea to identify class fields to be public!
-    // It should be private following the encapsulation concept
+    // It should be "private" following the encapsulation concept
     public String name; // null by default
     public int age; // 0 by default
 
@@ -110,6 +110,53 @@ public class User {
     /*
      * Consider the example below as short and quick hint for your first task:
      */
+    static double findAvgOrSum(double n1, double n2, int operation) {
+        // if the operation value is "1" => call the sum method
+        // if the operation value is "2" => call the avg method
+        // else display an error message and return 0 (Your task to enjoy)
+        /*
+         * The logic / Algorithm:
+         * if (operation=1) then call findTotal()
+         * else if (operation=2) then call findAvg()
+         * else output any warning message and return 0
+         */
+        double result;
+        if (operation == 1) {
+            // call the private method findTotal()
+            // passing arguments
+            /*
+             * Notice the following error (before fixing it):
+             * Cannot make a static reference to the non-static method
+             * findTotal(double, double)
+             * 
+             * Error Reason:
+             * In plain English:
+             * Static method cannot use/call non-static method(s)
+             * 
+             * Solutions:
+             * 1- remove static from this method "findAvgOrSum" => We don't want :-(
+             * 2- add the keyword "static" to other methods => Yes :-)
+             */
+            result = findTotal(n1, n2);
+        } else {
+            // call the private method findAvg()
+            result = findAvg(n1, n2);
+        }
+
+        return result;
+    }
+
+    private static double findTotal(double x, double y) {
+        return x + y;
+    }
+
+    private static double findAvg(double x, double y) {
+        return (x + y) / 2;
+    }
+
+    /*
+     * Another Example that is similar to your first task logic also :-)
+     */
 
     // create any simple "static" method:
     /*
@@ -117,7 +164,7 @@ public class User {
      * we are calling/invoking 2 other static methods
      * according to the user's choice
      */
-    public static double doCalculation(double anyNumber, int choice) {
+    public static double calculate(double anyNumber, int choice) {
         if (choice == 1) {
             // call our method squareNumber: example => 5 * 5
             /*

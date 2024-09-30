@@ -12,10 +12,14 @@ public class Main {
         Account account1 = new Account();
 
         // account1.balance = 100; // Error => "balance" is a private field
-        account1.setBalance(100);
+        account1.setBalance(100); // First Time Setting Balance
+        System.out.println("Account1 current balance: " + account1.getBalance());
+
+        account1.setBalance(200); // Transaction was canceled...
 
         // deposit:
         account1.deposit(300);
+        System.out.println("Account1 new balance: " + account1.getBalance());
 
         // deposit again:
         account1.deposit(400);
@@ -42,6 +46,8 @@ public class Main {
         Account account2 = new Account();
         System.out.println("account2: " + account2);
         // account2: bank_accounts.Account@776ec8df
+
+        // account2.toString();
 
         /*
          * The two output of the object values above [before overriding toString()]:

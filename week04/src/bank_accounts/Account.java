@@ -5,6 +5,10 @@ package bank_accounts;
  * 
  * NOTE:
  * In Java, we have the main (parent) class called "Object"
+ * "Object" is the mother class in Java :-)
+ * Any class we create will be a child of the mother class "Object"
+ * 
+ * Which means:
  * Every custom class we create will "inherit" properties/methods 
  * from this main Java class "Object"
  * 
@@ -15,6 +19,7 @@ package bank_accounts;
  * 
  * Inheritance: will be covered in details
  */
+
 /*
 * Creating a class for a bank account to learn more about Encapsulation:
 * The bank account is very popular example in the net 
@@ -22,13 +27,12 @@ package bank_accounts;
 */
 
 /*
- * NOTE:
+ * NOTE TO REVIEW:
  * class must always be "public"
  * Error Message:
  * Illegal modifier for the class Member;
  * only public, abstract & final are permitted
- */
-/*
+ * 
  * private class Account {
  * 
  * }
@@ -75,18 +79,21 @@ public class Account {
     // Make it more advanced by adding deposit/withdraw methods:
     // Setting a value using the setter is definitely not a good practice!
     void deposit(double amount) {
-        if (amount <= 0) {
+        if (amount < 0) {
             System.err.println("Invalid deposit amount!");
         } else {
+            System.out.println("Previous Balance: " + this.balance);
             // Using the long formula:
             // this.balance = this.balance + amount;
             // Or using the shorthand => +=
             // Notice that you could omit the use of "this" keyword
             this.balance += amount;
+            // for testing, we can output this message:
+            System.out.println("The new balance after adding $" + amount + " is: " + this.balance);
         }
-    }
+    } // deposit()
 
-    void withdraw(double amount) {
+    public withdraw(double amount) {
         /*
          * Two conditions for withdrawing:
          * 1. the amount to withdraw should be more than 0
@@ -125,15 +132,22 @@ public class Account {
      * Link: https://docs.oracle.com/javase/tutorial/java/IandI/objectclass.html
      * 
      * Using @override Annotation:
-     * Annotations, a form of metadata, provide data about a program that is not
-     * part of the program itself. Annotations have no direct effect on the
-     * operation of the code they annotate.
+     * Annotations: a form of metadata, provide data about a program that is not
+     * part of the program itself
+     * Annotations: have no direct effect on the operation of the code they annotate
      * 
-     * When overriding a method, you might want to use the @Override
-     * annotation that instructs the compiler that you intend to override a method
-     * in the superclass. If, for some reason, the compiler detects that the method
+     * NOTE:
+     * When overriding a method, we might want to use the @Override annotation
+     * to instruct the compiler that we intend to override a method in the
+     * superclass.
+     * 
+     * If, for some reason, the compiler detects that the method
      * does not exist in one of the superclasses, then it will generate an error.
      * Link: https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+     * 
+     * Polymorphism (To be discussed on details later with Inheritance):
+     * - Overloading: (not in this example)
+     * - Overriding: in the example below "toString()"
      */
     @Override
     public String toString() {
@@ -150,6 +164,5 @@ public class Account {
          * Notice that below, we can omit the user of "this" keyword
          */
         return "Current Balance: " + this.balance; // no need for "this" (optional)
-    }
-
+    } // toString()
 } // class file
