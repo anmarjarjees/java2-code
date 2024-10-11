@@ -1,8 +1,7 @@
 # Week06 Packages and Code Files Sequence:
-- inheritance_demo1
-    - Shape.java & Square.java (extends keyword)
-    - Cat.java => bad example 
-    - Computer.java => bad example 
+
+- inheritance_demo2
+    - Employee.java "final" class: cannot be extended, just for creating objects
     - Vehicle.java => The superclass
     - Car.java => subclass of Vehicle
     - Motorcycle.java => subclass of Vehicle (Tasks to finish)
@@ -10,8 +9,9 @@
     - Main.java => The main class that contains main() method
     - Employee.java => "final" class: cannot be extended, just for creating objects
 - protected_demo
-    - App.java
-
+    - Bus.java
+    - Van.java
+    - Main.java
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

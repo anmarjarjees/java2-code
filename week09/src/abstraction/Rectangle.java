@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
 
     // 2 public methods:
     @Override
-    double calcArea() {
+    public double calcArea() {
         return value1 * value2;
     }
 

@@ -1,4 +1,8 @@
 # Week04 Packages and Code Files Sequence:
+- inc_dec_review
+    - IncDecRev.java
+- abstraction_concept
+    - LoginProcess.java => the idea of "abstraction"
 - bank_accounts
     - Account.java
     - Main.java
@@ -6,8 +10,15 @@
     - User.java
     - Final.java
     - Client.java (Just extra example self-study)
+- overload_review
+    - Total.java
+    - Main.java
 - classes_demo
     - MainDemo.java
+- random_intro
+    - RandomClass.java
+    - NumberGuess.java
+    
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.

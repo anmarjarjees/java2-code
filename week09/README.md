@@ -1,5 +1,5 @@
 # Week09 Packages and Code Files Sequence:
-- inheritance_demo2
+- inheritance_demo3
     - package1
         - Vehicle.java
         - Car.java
@@ -22,7 +22,6 @@
     - HardDrive.java
     - Main.java
 - abstraction
-    - LoginService.java => the idea of "abstraction"
     - Shape.java => the keyword "abstraction"
     - Rectangle.java => subclass of "Shape"
     - Spaceship.java => simple demo of UML Class Diagram

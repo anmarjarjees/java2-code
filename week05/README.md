@@ -1,17 +1,14 @@
 # Week05 Packages and Code Files Sequence:
-- inc_dec_review
-    - IncDecRev.java
-- overload_review
-    - Total.java
-    - Main.java
-- random_intro
-    - RandomClass.java
-- guessing_games
-    - NumberGuess.java
-- inheritance_intro
-    - AnyRandom.java
-- guessing_games
+- guessing_game
+    - AnyRandom.java (Inheritance Introduction for "extends" keyword)
     - AnyGuess.java
+- inheritance_demo1
+    - Shape.java 
+    - Square.java 
+    - *Cat.java => bad example*
+    - *Computer.java => bad example*
+    - Triangle.java
+    - Rectangle.java
 
 ## Getting Started
 

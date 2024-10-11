@@ -78,7 +78,7 @@ public class Account {
 
     // Make it more advanced by adding deposit/withdraw methods:
     // Setting a value using the setter is definitely not a good practice!
-    void deposit(double amount) {
+    public void deposit(double amount) {
         if (amount < 0) {
             System.err.println("Invalid deposit amount!");
         } else {
@@ -93,7 +93,7 @@ public class Account {
         }
     } // deposit()
 
-    public withdraw(double amount) {
+    public void withdraw(double amount) {
         /*
          * Two conditions for withdrawing:
          * 1. the amount to withdraw should be more than 0
@@ -145,7 +145,7 @@ public class Account {
      * does not exist in one of the superclasses, then it will generate an error.
      * Link: https://docs.oracle.com/javase/tutorial/java/IandI/override.html
      * 
-     * Polymorphism (To be discussed on details later with Inheritance):
+     * Polymorphism (To be discussed on details with Inheritance):
      * - Overloading: (not in this example)
      * - Overriding: in the example below "toString()"
      */

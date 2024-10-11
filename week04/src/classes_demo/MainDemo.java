@@ -5,8 +5,10 @@ package classes_demo;
  */
 import bank_accounts.Account;
 
+// Ignore the "Total" import statement:
+// import overload_review.Total;
 /* 
- * Importing all the class files 
+ * Importing all the class files using *
  * inside the package "static_keyword"
  */
 import static_keyword.*;
@@ -24,8 +26,9 @@ public class MainDemo {
         User user1 = new User();
 
         /*
-         * there is no import so we have to specify
+         * There is no import statement for class "Total"
+         * so we have to specify the full path: overload_review.Total
          */
-        week04.p01_classes.Car myCar = new week04.p01_classes.Car("Dodge", 2010, "SUV", "CXT");
+        System.out.println(overload_review.Total.add(20, 30));
     }
 }
